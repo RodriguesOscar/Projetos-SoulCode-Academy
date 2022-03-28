@@ -1,0 +1,21 @@
+<div id="form-container" class="container-fluid">
+  <div id="form" class="card p-4">
+    <label><strong>Nome:</strong></label>
+  <input type="text" class="form-control" name="nome" [(ngModel)]="nome" placeholder="Digite seu nome completo">
+  <div class="form-text">
+    O meu nome com todas as letras maiúsculas: {{nome | uppercase}}
+  </div>
+  <label><strong>Data que conheçeu o EXO:</strong></label>
+  <input type="date" class="form-control" name="data" [(ngModel)]="data">
+  <div class="form-text">
+    <strong>Parabéns! O dia mais feliz da sua vida foi: {{data | date:'shortDate'}}</strong>
+  </div>
+  <div class="text-center">
+    <a class="btn btn-success mt-3 mx-4" (click)="comprar()">Finalizar compra</a>
+    <a class="btn btn-secondary mt-3" routerLink="/cards">Cancelar</a>
+  </div>
+  </div>
+</div>
+
+
+

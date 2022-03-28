@@ -1,0 +1,48 @@
+<div>
+
+  <div>
+    <label>Selecione uma cor:</label>
+  </div>
+
+  <select class="form-control text-center" name="cor" [(ngModel)]="cor" required>
+    <option value="" selected>Escolher a cor da camiseta</option>
+    <option value="cor1">Preto</option>
+    <option value="cor2">Branco</option>
+    <option value="cor3">Cinza</option>
+  </select>
+
+  <div [ngSwitch]="cor">
+    <p *ngSwitchDefault=""><strong>Sem cores selecionadas</strong></p>
+    <p *ngSwitchCase="'cor1'">
+      <strong>Você escolheu a camiseta preta</strong>
+    </p>
+    <p *ngSwitchCase="'cor2'">
+      <strong>Você escolheu a camiseta branca</strong>
+    </p>
+    <p *ngSwitchCase="'cor3'">
+      <strong>Você escolheu a camiseta cinza</strong>
+    </p>
+  </div>
+
+</div>
+
+<div class="mt-4">
+  <span>Quantas camisas deseja comprar?</span>
+
+  <select class="form-control text-center" name="cor" [(ngModel)]="quantidade" (change)="calcularCamisas()" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+</div>
+
+<div class="form-text mt-3 mb-3">
+  <strong>Valor total a pagar: {{camisaResultado | currency: "BRL"}}</strong>
+</div>
