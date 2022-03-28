@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SecondShoesBrasil/Formulario</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="1_ApresentacaoEmpresa.html" target="_self"><img src="Image/0_LogoGIF.gif" alt="SecondShoesStoreLogo" title="SecondShoesBrasil" id="gif1"></a>
+            <nav>
+               <ul class="flexMenu"> 
+                    <li class="li1"><a href="1_ApresentacaoEmpresa.html" target="_self" class="a">Quem somos?</a></li>
+                    <li class="li1"><a href="2_InformacoesEmpresa.html" target="_self" class="a">#SecondHand-se Já!</a></li>
+                    <li class="li1"><a href="3_FormulárioDeContatoDaEmpresa.html" target="_self" class="a">Junte-se a nós.</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--Aqui eu criei um formulário a partir da tag ""<form>"-->
+        <!--O formulário contém inputs a partir da tag "<input>", atributo "type=" e variáveis "color", "text", "email", "number" e "password", respectivamente.-->
+
+        <main>
+            <h1 class="hMain">FORMULÁRIO DE CADASTRO</h1>
+            <form class="grid3 pMain">
+                <div><input type="color" id="colorGrid"></div>
+                <div><label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"></div>
+                <div><label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="digite_seuemail@gmail.com"></div>
+                <div><label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" name="telefone" placeholder="12345678910"></div>
+                <div><label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="********" maxlength="8"></div>
+                <div id="sub">Senha de 8 caracteres com pelo menos uma letra maiúscula,um número e um caracter especial (@#$&*)</div>
+                <div><label for="senhaAgain">Repetir senha:</label><input type="password" id="senhaAgain" name="senhaAgain" placeholder="********" maxlength="8"></div>
+                <!--Aqui eu criei um grupo de inputs do tipo "radio" para fazer uma lista de escolha única entre várias faixas etárias-->
+                <div><h2 class="hMain" id="sub1">Faixa Etária:</h2></div>
+                <div><label><input type="radio" name="faixaEtaria" class="age1" value="10 a 20">10 a 20 anos</label>
+                <label><input type="radio" name="faixaEtaria" class="age1" value="61 a 70">61 a 70 anos</label></div>
+                <div><label><input type="radio" name="faixaEtaria" class="age2" value="21 a 30">21 a 30 anos</label>
+                <label><input type="radio" name="faixaEtaria" class="age2" value="71 a 80">71 a 80 anos</label></div>
+                <div><label><input type="radio" name="faixaEtaria" class="age3" value="31 a 40">31 a 40 anos</label>
+                <label><input type="radio" name="faixaEtaria" class="age3" value="81 a 90">81 a 90 anos</label></div>
+                <div><label><input type="radio" name="faixaEtaria" class="age4" value="41 a 50">41 a 50 anos</label>
+                <label><input type="radio" name="faixaEtaria" class="age4" value="91 a 100">91 a 100 anos</label></div>
+                <div><label><input type="radio" name="faixaEtaria" class="age5" value="51 a 60">51 a 60 anos</label>
+                <label><input type="radio" name="faixaEtaria" class="age5" value="101 a 110">101 a 110 anos</label></div>
+                <!--Aqui eu criei um menu de opções do tipo "select" para fazer uma lista de escolha única dentre várias opções de Estados brasileiros-->
+                <div><label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <label><option name="optiontag" id="1" value="SLCT">Selecione o Estado</option></label>
+                    <label><option name="optiontag" id="2" value="AC">Acre</option></label>
+                    <label><option name="optiontag" id="3" value="AL">Alagoas</option></label>
+                    <label><option name="optiontag" id="4" value="AP">Amapá</option></label>
+                    <label><option name="optiontag" id="5" value="AM">Amazonas</option></label>
+                    <label><option name="optiontag" id="6" value="BA">Bahia</option></label>
+                    <label><option name="optiontag" id="7" value="CE">Ceará</option></label>
+                    <label><option name="optiontag" id="8" value="ES">Espírito Santo</option></label>>
+                    <label><option name="optiontag" id="9" value="GO">Goiás</option></label>
+                    <label><option name="optiontag" id="10" value="MA">Maranhão</option></label>
+                    <label><option name="optiontag" id="11" value="MT">Mato Grosso</option></label>
+                    <label><option name="optiontag" id="12" value="MS">Mato Grosso do Sul</option></label>
+                    <label><option name="optiontag" id="13" value="MG">Minas Gerais</option></label>
+                    <label><option name="optiontag" id="14" value="PA">Pará</option></label>
+                    <label><option name="optiontag" id="15" value="PB">Paraíba</option></label>
+                    <label><option name="optiontag" id="16" value="PR">Paraná</option></label>
+                    <label><option name="optiontag" id="17" value="PE">Pernambuco</option></label>
+                    <label><option name="optiontag" id="18" value="PI">Piauí</option></label>
+                    <label><option name="optiontag" id="19" value="RJ">Rio de Janeiro</option></label>>
+                    <label><option name="optiontag" id="20" value="RN">Rio Grande do Norte</option></label>
+                    <label><option name="optiontag" id="21" value="RS">Rio Grande do Sul</option></label>
+                    <label><option name="optiontag" id="22" value="RO">Rondônia</option></label>
+                    <label><option name="optiontag" id="23" value="RR">Roraima</option></label>
+                    <label><option name="optiontag" id="24" value="SC">Santa Catarina</option></label>
+                    <label><option name="optiontag" id="25" value="SP">São Paulo</option></label>
+                    <label><option name="optiontag" id="26" value="SE">Sergipe</option></label>
+                    <label><option name="optiontag" id="27" value="TO">Tocantins</option></label>
+                    <label><option name="optiontag" id="28" value="DF">Distrito Federal</option></label>
+                </select></div>
+                <div><label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade"></div>
+                <!--Aqui eu criei um grupo de inputs do tipo "checkbox" para fazer uma lista com mais de uma escolha possível de interesse na SecondShoes-->
+                <div><h3 class="hMain" id="sub2">Qual o seu interesse na SecondShoes?</h3></div>
+                <div><label><input type="checkbox" name="opcoes" id="check1">Quero ser um doador</label>
+                <label><input type="checkbox" name="opcoes" class="check1">Quero ser um colaborador</label>
+                <label><input type="checkbox" name="opcoes" class="check1">Quero ser um comprador</label>
+                <label><input type="checkbox" name="opcoes" class="check1">Outros</label></div>
+                <!--Aqui eu criei uma área de texto para que o usuário consiga escrever livremente mensagens para a SecondShoes-->
+                <div id="sub3">Se você marcou a opção "Outros", escreva-nos uma mensagem e especifique seu interesse:</div>
+                <div><label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="digite sua mensagem" cols="87" rows="20"></textarea></div>
+                <!--Aqui eu criei um botão do tipo "submit" para enviar o formulário e outro do tipo "reset" para limpar o preenchimento-->  
+                <button type="submit" class="button">Enviar</button>
+                <button type="reset" class="button">Limpar</button>
+            </form>
+            <h4 class="hMain" id="sub4">Você será contactado via e-mail em breve. Obrigado!</h4>      
+        </main>
+
+        <footer class="flexFoot">
+            <div class="footItem">
+                <h3>Patrocinadora</h3>
+                <address>
+                    <a href="https://soulcodeacademy.org/" target="_blank"><img src="Image/img13.jpg"
+                            alt="SoulCode Academy Logo" title="SoulCode Academy" width="100px" id="img13"></a>
+                </address>
+            </div>
+            <div class="footItem">
+                <h5>Encontre-nos nas redes sociais</h5>
+                <address>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="Image/img1.jpg" alt="LinkedIn SecondShoesBrasil" width="50px" title="LinkedIn" id="img1"><a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="Image/img2.png" alt="Facebook SecondHandBrasil" width="50px" title="Facebook" id="img2"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="Image/img3.jpg" alt="Instagram SecondHandBrasil" width="50px" title="Instagram" id="img3"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="Image/img4.png" alt="WhatsApp SecondHandBrasil" width="70px" title="WhatsApp" id="img4"></a>
+                </address>
+            </div>
+            <div class="footItem">
+                <p id="pFoot">
+                    © 2021 SecondShoes Brasil - All Rights Reserved
+                    Rua do Sol, 648, Studio do Sol Apart Residence
+                    Olinda/PE - CEP 53120-010 | CNPJ:
+                    17.895.646/0001-87
+                </p>
+            </div>
+        </footer>
+        
+    </body>
+
+</html>

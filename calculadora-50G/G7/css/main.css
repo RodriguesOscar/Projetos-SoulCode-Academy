@@ -1,0 +1,14 @@
+:root{
+    font-size: 62.5%;
+    --color-blue: #0096D6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}

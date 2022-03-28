@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <!-- FIM DAS FONTES -->
+
+  <!-- PARA ICONES DO BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <title >Quem Somos</title>
+
+  <!-- ICONE DA BARRA DE NAVEGAÇÃO -->
+  <link rel="shortcut icon" type="imagex/png" href="img/ferramentas-de-design.png">
+
+  <!-- CSS DA PAGINA -->
+  <link rel="stylesheet" href="css/quemSomos.css">
+</head>
+
+<body style="background-image: url('img/background.jpeg');">
+
+  <header>
+    <div class="containe-fluid">
+
+      <nav class="navbar navbar-expand-md" id="menu-principal">
+
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand mx-3" href="index.html">Futuro <p>Front-End</p></a>
+
+
+          <!-- BOTÃO PARA O MENU MOBILE -->
+          <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false">
+
+            <span id="hamburger"></span>
+          </button>
+
+
+          <ul id="menu" role="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link " href="portifolio.html">Portfólio</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link " href="formulario.html">Serviços</a>
+            </li>
+
+
+            <li class=" nav-item dropdown">
+
+              <a href="#" class="nav-link dropdown-toggle mx-5" id="navbarScrollingDropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Acessibilidade
+              </a>
+
+              <ul class="dropdown-menu menuDrop btnAcessibilidade" aria-labelledby="navbarScrollingDropdown">
+                <li><input type="button" onclick="fonte('a')" value="Aumentar a fonte ( + )">
+                </li>
+
+                <li><input type="button" onclick="fonte('d')" value="Diminuir a fonte ( - )">
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- QUEM SOMOS -->
+    <div class="container qSomos">
+      <h3 id="quemSomos">Quem somos</h3>
+
+      <div id="roxo" class="mover" data-rellax-speed="6"></div>
+
+      <div id="verde" class="mover" data-rellax-speed="3"></div>
+
+      <div id="transparente" class="mover" data-rellax-speed="0">
+        <p class="acessibilidade">Somos uma startup de desenvolvedores, que projeta e introduz soluções de design e usabilidade na construção de interfaces
+          modernas para empresas de diversos setores do mercado.
+        </p>
+
+        <p class="acessibilidade">
+          Construimos o seu site, com a melhor estrutura <mark>SEO para as buscas do Google</mark>, criamos pensando em acessibilidade,
+          inclusão e na melhor estética para a apresentação do conteúdo da sua empresa.
+        </p>
+
+      </div>
+      <img class="mover" data-rellax-speed="4" src="img/LightBulb.png" alt="">
+
+    </div>
+    <!-- FIM QUEM SOMOS -->
+
+    <!-- TABELA - MISSÃO VISÃO VALORE -->
+    <div class="container mt-5">
+      <div class="row table-responsive-lg" id="tabelaMvv">
+        <table class="table align-middle">
+          <thead>
+            <tr class="text-center">
+              <th scope="col" class="missao missaoM">MISSÃO</th>
+              <th scope="col" class="visao visaoV">VISÃO</th>
+              <th scope="col" class="valores valoresV">VALORES</th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr>
+              <td class="col col-md-4 missao missaoP">
+                <p>Construir soluções inovadoras que atendam todos os nossos clientes, visando melhor usabilidade e
+                  design.</p>
+              </td>
+
+              <td class="col col-md-4 visao visaoP">
+                <p>Ser referência em qualidade e design, trazendo exelência na usabilidade das nossas soluções.</p>
+              </td>
+
+              <td class="col col-md-4 valores valoresP">
+                <p>Ética; Inovação; Cooperação; Qualidade; Responsabilidade; Foco no cliente;</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- FIM DA TABELA - VISÃO MISSÃO VALORES -->
+
+    <!-- NOSSO TIME -->
+    <!-- CONTAINER BOOTSTRAP -->
+    <div class="container">
+      <!-- CRIANDO UMA LINHA -->
+      <h3 class="text-center mt-5 nosso-time">Nosso time</h3>
+      <div class="row linha-card">
+        <!-- CRIANDO OS CARDS EM 4 COLUNAS -->
+        <div class="col-sm-12 col-md-6 col-lg-3 card-container mt-4">
+          <!-- CLASSE PARA CRIAR O FLIP NO CARD VIA CSS -->
+          <div class="card-flip">
+            <!-- FRENTE DO CARD -->
+            <div class="card front">
+              <!-- DIV PARA SEPARAR OS ELEMENTOS DE REDES SOCIAIS -->
+              <div id="redes">
+                <a href="https://www.linkedin.com/in/andr%C3%A9-morelli-duarte-santos/" target="_blank"><i class="bi bi-linkedin h3"></i></a>
+
+                <a href="https://github.com/andremorelli/jogo-helicoptero" target="_blank"><i class="bi bi-github h3"></i></a>
+              </div>
+
+              <!-- IMAGEM DO AVATAR -->
+              <img src="img/Andre.jpeg" class="card-img-top img-fluid" />
+              <p class="card-text mb-1 click">Click no Card</p>
+              <!-- DIV PARA O NOME E CARGO -->
+              <div class="linha-base">
+                <h4 class="card-title text-center">André</h4>
+                <p class="card-text text-center mb-1 acessibilidade">Full Stack Developer</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DA FRENTE DO CARD -->
+
+            <!-- PARTE DE TRAZ DO CARD -->
+            <div class="card back">
+              <div class="card-header text-center">Desenvolvedor Full Stack</div>
+              <div class="linha-base">
+                <h4 class="card-title text-center mt-4">André Morelli</h4>
+                <p class="card-text text-center">
+                  Programador Full Stack desenvolvedor de soluções de automação e internet das coisas . Procurando aprender cada vez mais...
+                </p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DE TRAZ DO CARD-->
+          </div>
+
+          <p class="linkPortifolio"><a href="portifolio.html#nos" class="acessibilidade">Conheça meu trabalho!</a></p>
+        </div>
+        <!-- FIM DO CARD 1 -->
+
+        <div class="col-sm-12 col-md-6 col-lg-3 card-container mt-4">
+          <div class="card-flip">
+            <!-- FRENTE DO CARD -->
+            <div class="card front">
+              <!-- DIV PARA SEPARAR OS ELEMENTOS DE REDES SOCIAIS -->
+              <div id="redes">
+                <a href="https://www.linkedin.com/in/dionatam-lima-silva/" target="_blank"><i class="bi bi-linkedin h3"></i></a>
+
+                <a href="https://github.com/Djou-D" target="_blank"><i class="bi bi-github h3"></i></a>
+              </div>
+              <img src="img/Dionatam.jpeg" class="card-img-top img-fluid" />
+              <p class="card-text mb-1 click">Click no Card</p>
+
+              <div class="linha-base">
+                <h4 class="card-title text-center">Dionatam</h4>
+                <p class="card-text text-center mb-1 acessibilidade">Full Stack Developer</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DA FRENTE DO CARD -->
+
+            <!-- PARTE DE TRAZ DO CARD -->
+            <div class="card back">
+              <div class="card-header text-center">Desenvolvedor Full Stack</div>
+              <div class="linha-base">
+                <h4 class="card-title text-center mt-4">Dionatam Lima</h4>
+                <p class="card-text text-center">Programador full stack apaixonado por tecnologia.</p>
+                <p class="card-text text-center">Desenvolvedor de soluções, focado e engajado na necessidade do cliente.
+                  Criando e projetando o futuro.</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DE TRAZ DO CARD -->
+          </div>
+
+          <p class="linkPortifolio"><a href="portifolio.html#nos" class="acessibilidade">Conheça meu trabalho!</a></p>
+        </div>
+        <!-- FIM DO CARD 2 -->
+
+        <div class="col-sm-12 col-md-6 col-lg-3 card-container mt-4">
+          <div class="card-flip">
+            <!-- FRENTE DO CARD -->
+            <div class="card front">
+              <!-- DIV PARA SEPARAR OS ELEMENTOS DE REDES SOCIAIS -->
+              <div id="redes">
+                <a href="https://www.linkedin.com/in/jpmelo13/" target="_blank"><i class="bi bi-linkedin h3"></i></a>
+
+                <a href="https://github.com/JPMELO13"><i class="bi bi-github h3"></i></a>
+              </div>
+              <img src="img/João.jpeg" class="card-img-top img-fluid" />
+              <p class="card-text mb-1 click">Click no Card</p>
+
+              <div class="linha-base">
+                <h4 class="card-title text-center">João</h4>
+                <p class="card-text text-center mb-1 acessibilidade">Full Stack Developer</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DA FRENTE DO CARD -->
+
+            <!-- PARTE DE TRAZ DO CARD -->
+            <div class="card back">
+              <div class="card-header text-center">Desenvolvedor Full Stack</div>
+              <div class="linha-base">
+                <h4 class="card-title text-center mt-4">João Pedro Melo</h4>
+                <p class="card-text text-center">Programador Full Stack com perfil estratégico e criativo dedicado a projetos com foco em comunicação visual e inovações tecnológicas.</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DE TRAZ DO CARD -->
+          </div>
+
+          <p class="linkPortifolio"><a href="portifolio.html#nos" class="acessibilidade">Conheça meu trabalho!</a></p>
+        </div>
+        <!-- FIM DO CARD 3 -->
+
+        <div class="col-sm-12 col-md-6 col-lg-3 card-container mt-4">
+          <div class="card-flip">
+            <!-- FRENTE DO CARD -->
+            <div class="card front">
+              <!-- DIV PARA SEPARAR OS ELEMENTOS DE REDES SOCIAIS -->
+              <div id="redes">
+                <a href="https://www.linkedin.com/in/oscardev1/" target="_blank"><i class="bi bi-linkedin h3"></i></a>
+
+                <a href="https://github.com/RodriguesOscar"><i class="bi bi-github h3"></i></a>
+              </div>
+              <img src="img/Oscar.jpeg" class="card-img-top img-fluid" />
+              <p class="card-text mb-1 click">Click no Card</p>
+
+              <div class="linha-base">
+                <h4 class="card-title text-center">Oscar</h4>
+                <p class="card-text text-center mb-1 acessibilidade">Full Stack Developer</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DA FRENTE DO CARD -->
+
+            <!-- PARTE DE TRAZ DO CARD -->
+            <div class="card back">
+              <div class="card-header text-center">Desenvolvedor Full Stack</div>
+              <div class="linha-base">
+                <h4 class="card-title text-center mt-4">Oscar Rodrigues</h4>
+                <p class="card-text text-center">Desenvolvedor web full stack motivado a buscar as melhores soluções para o seu projeto</p>
+              </div>
+            </div>
+            <!-- FIM DA PARTE DE TRAZ DO CARD -->
+          </div>
+
+          <p class="linkPortifolio"><a href="portifolio.html#nos" class="acessibilidade">Conheça meu trabalho!</a></p>
+        </div>
+        <!-- FIM DO CARD 4 -->
+        
+      </div>
+    </div>
+    <!-- FIM NOSSO TIME -->
+     
+     
+    <!--SCROLLSPY -->
+
+    <div class="container-fluid">
+
+      <h3 class="text-center my-5 titulo-scroll">Conheça mais sobre nós</h3>
+
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <div id="lista" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#oQueFazemos">O que fazemos</a>
+
+            <a class="list-group-item list-group-item-action" href="#identidadeVisual">Identidade visual</a>
+
+            <a class="list-group-item list-group-item-action" href="#criamosSeuSite">Criamos seu site</a>
+
+            <a class="card-link list-group-item  list-group-item-action btnFuturo mt-5" data-bs-toggle="modal" data-bs-target="#modal" href="">O Futuro é Agora!</a>
+          </div>
+        </div>
+
+        <!-- MODAL O FUTURO... -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+
+          <div class="modal-dialog modal-lg" role="document">
+      
+            <div class="modal-content">
+      
+              <div class="modal-body">
+                <div>
+                  <h4 class="modal-title tituloModal">O <span>Futuro</span> é agora!!!</h4>
+               
+                  <button type="button" class="" data-bs-dismiss="modal">X</button>
+                </div>
+                <div class="contatiner-fluid">
+                  <div class="row">
+                    <div class="col-md-6 textoModal">
+                      <p>10% da nossa arrecadação por projeto é destinado para a manutenção, de Edtechs que apoiam jovens carentes no desenvolvimento de suas carreiras como futuros desenvolvedores...</p>
+                    </div>
+      
+                    <div class="col-md-6">
+                      <img class="img-fluid" src="img/modalEditech.png" alt="Livro com imagens olograma de tecnologia">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIM DO MODAL -->
+
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#lista" data-bs-offset="50" class="scrollspySite" tabindex="0">
+
+            <div class="row p-3 linhaScroll">
+
+              <div class="col-md-6 col-sm-12">
+                <h4 class="text-center mb-3" id="oQueFazemos">O que fazemos</h4>
+
+
+                <img class="img-fluid imagemScroll" src="img/programando1.gif" alt="">
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <p>Projetamos a melhor solução para o seu negócio</p>
+              </div>
+            </div>
+
+            <div class="row p-3 linhaScroll">
+
+
+              <div class="col-md-6 col-sm-12">
+                <h4 class="text-center mb-3" id="identidadeVisual">Identidade visual</h4>
+
+                <img class="img-fluid imagemScroll" src="img/Pc1.gif" alt="">
+              </div>
+
+              <div class="col-md-6 col-sm-12" id="identidadeVisual">
+                <p>Desenvolvemos a identidade visual para Agregar a sua empresa</p>
+              </div>
+            </div>
+
+            <div class="row p-3 linhaScroll">
+
+
+              <div class="col-md-6 col-sm-12">
+                <h4 class="text-center mb-3" id="criamosSeuSite"> Criamos seu site</h4>
+
+                <img class="img-fluid imagemScroll" src="img/Pc.gif" alt="">
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <p>Projetamos a melhor experiência para o seu usuário</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIM DO SCROLLSPY -->
+
+   
+      <!-- GOOGLE MAP API -->
+      <div class="container mapCont">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mapa">
+              <h3 class="acessibilidade">Nosso escritorio fica aqui <i class="bi bi-geo-alt-fill"></i></h3> 
+              <P class="acessibilidade">Quinta praia, Morro de São Paulo, Cairu - BA.
+              </P>       
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="mapa"></div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  
+    <!-- SETA PARA O INICIO DA PAGINA -->
+    <a href="sobre.html#quemSomos"><i class="bi bi-arrow-up-circle-fill h2 text-dark arrow"></i></a>
+  
+
+  <footer id="footerQuem">
+    <div class="container fluid text-center">
+      <div class="container my-4">
+
+        <div class="row">
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-envelope text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-telegram text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-whatsapp text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-instagram text-white mx-1 h2"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <small>&copy; 2021 Futuro Front-End</small>
+
+    </div>
+  </footer>
+
+  <!-- VLIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <!-- JS DO VLIBRAS -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- FIM DO VLIBRAS -->
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- API GOOGLE MAPS -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBksdpXhflqJPX0SJ4Hyt82vwg9NxIrW6g&callback=inicializar"></script>
+
+  <!-- BIBLIOTECA RELLAX JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"> </script>
+
+  <!-- JS DA PAGINA -->
+  <script src="js/quemSomos.js"></script>
+</body>
+
+</html>

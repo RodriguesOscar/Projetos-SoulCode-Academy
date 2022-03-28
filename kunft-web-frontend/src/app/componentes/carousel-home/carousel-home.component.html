@@ -1,0 +1,88 @@
+<!-- CAROUSEL DE IMAGENS -->
+<div id="carousel-container" class="container-fluid mb-5">
+  <div class="row">
+    <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner imgMax">
+        <div class="carousel-item active">
+          <img src="../../../assets/img/banner1.jpg" class="d-block w-100" alt="Uma reunião de brainstorm">
+          <div class="carousel-caption d-none d-lg-block textoLateral">
+            <div class="row carouselCont">
+              <div class="col-sm-12 mg-lg-6 esquerda">
+                <h5 class="acessibilidade">Seja um profissional do futuro!</h5>
+                <p class="acessibilidade">Venha fazer parte da KUNFT, escola de desenvolvimento web frontend.</p>
+              </div>
+              <div class="col-sm-12 mg-lg-6">
+                <button (click)="btnCarousel('quem-somos')" type="button" class="btnCarousel"><a>Saiba quem somos</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../../assets/img/banner2.jpg" class="d-block w-100" alt="Uma explosão de criatividade">
+          <div class="carousel-caption d-none d-lg-block textoLateral">
+            <div class="row carouselCont">
+              <div class="col-sm-12 mg-lg-6 esquerda">
+                <h5 class="acessibilidade">Unimos tecnologia e educação de qualidade.</h5>
+                <p class="acessibilidade">Nossos cursos são atualizados com as melhores tecnologias do mercado.</p>
+              </div>
+              <div class="col-sm-12 mg-lg-6">
+                <button (click)="btnCarousel('cursos-container')" type="button" class="btnCarousel"><a>Conheça nossos cursos</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../../assets/img/banner3.jpg" class="d-block w-100" alt="Homem digitando cores">
+          <div class="carousel-caption d-none d-lg-block textoLateral">
+            <div class="row carouselCont">
+              <div class="col-sm-12 mg-lg-6 esquerda">
+                <h5 class="acessibilidade">Uma Explosão de Ideias</h5>
+                <p class="acessibilidade">Siga a trilha do desenvolvimento frontend e seja um profissional do futuro!</p>
+              </div>
+              <div class="col-sm-12 mg-lg-6">
+                <button (click)="btnCarousel('trilha-dev')" type="button" class="btnCarousel"><a>Veja nossa trilha</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+  </div>
+  <div>.</div>
+</div>
+
+<!--  PAINEL MOBILE  -->
+<div class="container-fluid">
+  <div id="painel-container" class="text-light text-center text-sm-start p-5 p-lg-0 rounded">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-center">
+        <div>
+          <h1 id="painel-title" class="acessibilidade">Nós te ajudamos a alcançar os seus sonhos</h1>
+          <p id="painel-subtitle" class="lead my-4 acessibilidade">Estude conosco para se tornar um desenvolvedor web frontend de sucesso.</p>
+          <a (click)="btnCarousel('cursos-container')" id="painel-btn" class="btn">
+            Ver cursos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

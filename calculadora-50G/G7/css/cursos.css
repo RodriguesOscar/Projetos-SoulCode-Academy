@@ -1,0 +1,250 @@
+header {
+    display: block;
+    text-align: center;
+}
+
+#logo {
+    height: 7rem;
+    margin: 0;
+    margin-left: 7.4rem;
+    margin-right: 5rem;
+    margin-top: 5.1rem;
+    margin-bottom: 3.1rem;
+}
+h1{
+    margin-bottom:2rem;
+    text-align: center;
+}
+
+body {
+    background: #00b4db;
+    background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+    background: linear-gradient(to left, #00b4db, #0083b0);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+
+#nav-container {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+}
+
+#nav-container ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+    width: 100%;
+}
+
+#nav-container ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#nav-container ul a li {
+    list-style: none;
+
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+#zoom-container {
+    width: 100%;
+    justify-content: flex-end;
+    display: none;
+}
+
+#zoom-in {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+#zoom-out {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#areaInput{
+    max-width: 300px;
+    margin:auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    margin-bottom:1rem ;
+    margin-top:1rem ;
+    padding: 0.5rem;
+}
+
+
+#social-container {
+    display: flex;
+    max-width: 300px;
+    margin:auto;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+thead th {
+    margin-right: 2rem;
+}
+
+table td img {
+    width: 22px;
+    cursor: pointer;
+}
+
+footer h4 {
+    max-width: 300px;
+    margin:auto;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20rem;
+}
+
+
+button{
+    width: 10rem;
+    border-radius: 5px;
+}
+
+#salvar, #cancelar{
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+table th, td{
+    padding: 1px 5px;
+    text-align: center;
+    font-size: 1.6rem;
+    
+}
+
+.center{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+input{
+    width: 25rem;
+    height: 3rem;
+
+}
+
+h4{
+    margin-top:2rem;
+}
+
+#tabela{
+    width: 300px;
+    border-collapse: collapse;
+    margin-top: 3rem;
+}
+
+@media(min-width:768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7.4rem;
+        width: 100%;
+        margin-bottom: 4.5rem;
+    }
+
+    #nav-container ul {
+        margin-bottom: 0;
+    }
+    
+    #areaInput{
+        max-width: 500px;
+        margin:auto;
+    }
+
+    input{
+        width: 50rem;
+        height: 3rem;    
+    }
+
+    #btn-container {
+        justify-content: flex-start;
+    }
+
+    #salvar{
+        margin-right: 2rem;
+    }
+    #tabela {
+        width: 50rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    label, #tabela th {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width:1024px){
+    header {
+        margin-top: 0;
+        margin-bottom: 3rem;
+
+    }
+
+    main {
+        margin-top: 4rem;
+    }
+    
+    #zoom-container {
+        display: flex;
+    }
+
+    #areaInput, h1{
+        width: 800px;
+        max-width: 800px;
+    }
+
+    form {
+        align-items: center;
+    }
+
+    input{
+        width: 70rem;
+        height: 3rem;    
+    }
+
+    #tabela {
+        width: 80rem;
+    }
+}
+

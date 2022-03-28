@@ -1,0 +1,56 @@
+<div class="card mt-5 text-white">
+  <div class="card-body">
+    <h5 class="card-title">Cadastro de nova tarefa</h5>
+    <hr>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Nome da tarefa</label>
+        <input type="text" class="form-control" [(ngModel)]="projeto.pro_nome" name="pro_nome">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Descrição da tarefa</label>
+        <input type="text" class="form-control" [(ngModel)]="projeto.pro_descricao" name="pro_descricao">
+      </div>
+      <hr>
+      <div class="text-center">
+        <button (click)="cadastrarProjeto()" class="btn btn-success">Cadastrar</button>
+        <button routerLink="/projeto/lista-projeto" class="btn btn-secondary mx-3">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- <div class="mb-3">
+        <label class="form-label">Foto do Professor</label>
+        <input type="file" class="form-control" [disabled]="!professorCadastrado" (change)="subirFoto($event)" name="pro_foto">
+      </div> -->
+
+
+
+
+
+  <!-- foto:any -->
+
+  <!-- subirFoto(event:any){
+
+
+    if(event.target.files && event.target.files[0]){
+      this.foto = event.target.files[0]
+
+      const formData = new FormData
+      formData.append("foto",this.foto)
+
+      const nome:string = this.professor.pro_nome + "-" + event.target.files[0].name
+
+
+      //http://localhost:8080/escola/envio/3?nome=yyyyyyyyy
+      this.http.post(`http://localhost:8080/escola/envio/${this.idProfessorCadastrado}?nome=${nome}`,formData).subscribe({
+        next: () => console.log("Foto enviada")
+      })
+
+      alert("Foto anexada ao Professor")
+
+
+    }
+  } -->

@@ -1,0 +1,21 @@
+.navbar{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-brand, .nav-link{
+  color: rgb(255,188,0);
+}
+
+.nav-link:hover{
+  color: rgb(255, 255, 255);
+}
+
+#toggler{
+  box-shadow: none;
+}
+
+
+#toggler-icon{
+  color: white ;
+}
+

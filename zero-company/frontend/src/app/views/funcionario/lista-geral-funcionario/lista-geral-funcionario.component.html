@@ -1,0 +1,47 @@
+<div class="card mt-5 text-white text-center">
+  <div class="card-body">
+    <h5 class="card-title">Lista dos monstros</h5>
+    <hr>
+    <div style="height: 300px; overflow: auto;">
+      <table class="table text-white">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome do monstro</th>
+            <th scope="col">Cargo do monstro</th>
+            <th scope="col">Id equipe</th>
+            <th scope="col">Equipe</th>
+            <th scope="col">Descrição da equipe</th>
+            <th scope="col">Atribuir Equipe</th>
+            <th scope="col">Recompensa</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let funcionario of funcionarios">
+            <th scope="row">{{funcionario.id_funcionario}}</th>
+            <td>{{funcionario.func_nome}}</td>
+            <td>{{funcionario.func_cargo}}</td>
+            <td>{{funcionario.id_equipe}}</td>
+            <td>{{funcionario.eqp_nome}}</td>
+            <td>{{funcionario.eqp_atribuicao}}</td>
+            <td>
+              <button routerLink="/funcionario/atribuir-equipe/{{funcionario.id_funcionario}}/{{funcionario.id_equipe}}" class="btn">Atribuir</button>
+            </td>
+            <td>
+              <i routerLink="/salario/lista-funcionario/{{funcionario.id_funcionario}}" class="btn btn-pag bi bi-currency-dollar"></i>
+            </td>
+            <td>
+              <i routerLink="/edicao-funcionario/{{funcionario.id_funcionario}}" class="bi bi-pen-fill text-success" ></i>
+              <i routerLink="/exclusao-funcionario/{{funcionario.id_funcionario}}" class="bi bi-trash-fill text-danger mx-2" ></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-5">
+      <button routerLink="/funcionario/cadastrar" class="btn mx-5" >Cadastrar monstro</button>
+      <!-- <button routerLink="/funcionario/listaCards" class="btn mx-5" >Ver monstros cadastrados</button> -->
+    </div>
+  </div>
+</div>

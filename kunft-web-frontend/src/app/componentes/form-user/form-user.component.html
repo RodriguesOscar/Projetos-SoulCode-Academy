@@ -1,0 +1,40 @@
+<div id="user-container" class="card px-3">
+  <div class="card-body">
+    <h2 class="text-center">Dúvidas e sugestões</h2>
+  </div>
+
+  <form [formGroup] = "form">
+
+    <div class="input-group mb-2">
+      <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+      <input type="text" class="form-control" placeholder="Digite o seu nome completo" formControlName="nome" [class.valido] ="this.form.get('nome')?.valid" [class.invalido]="this.form.get('nome')?.invalid && this.form.get('nome')?.touched">
+    </div>
+
+    <div class="input-group mb-2">
+      <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+      <input type="email" class="form-control" placeholder="Digite o seu e-mail" formControlName="email" [class.valido] ="this.form.get('email')?.valid" [class.invalido]="this.form.get('email')?.invalid && this.form.get('email')?.touched">
+    </div>
+
+    <div class="input-group mb-2">
+      <label class="titulo" for="">Selecione o motivo do contato</label>
+    </div>
+    <div class="mb-2">
+      <select class="form-control" name="cargo" formControlName="categoria" [class.valido] ="this.form.get('categoria')?.valid" [class.invalido]="this.form.get('categoria')?.invalid && this.form.get('categoria')?.touched">
+        <option value="" checked>Selecionar motivo</option>
+        <option value="DUVIDA">Dúvida</option>
+        <option value="SUGESTAO">Sugestão</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-2">
+      <label for="exampleFormControlTextarea1" class="form-label titulo">Em que podemos ajudar?</label>
+    </div>
+    <div class="mb-2">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Conte para nós" formControlName="conteudo" [class.valido] ="this.form.get('conteudo')?.valid" [class.invalido]="this.form.get('conteudo')?.invalid && this.form.get('conteudo')?.touched"></textarea>
+    </div>
+    <div class="d-flex justify-content-center">
+    <button [disabled]="form.invalid" class="btn btn-success mb-3" (click)="enviarDadosUser()">Enviar</button>
+    </div>
+  </form>
+</div>
+

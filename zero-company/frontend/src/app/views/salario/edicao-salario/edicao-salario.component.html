@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-body text-white">
+    <h5 class="card-title">Edição de Salario</h5>
+    <hr>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        <input type="text" class="form-control" [(ngModel)]="salario.sl_descricao" name="sl_descricao">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Data de Pagamento</label>
+        <input type="date" class="form-control" [(ngModel)]="salario.sl_dataPagamento"  name="sl_dataPagamento" style="width:200px;">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Valor</label>
+        <input type="text"  class="form-control text-center" [(ngModel)]="salario.sl_valor" name="sl_valor"  currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }" style="width:200px;">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Status</label>
+        <input type="text" class="form-control" readonly [(ngModel)]="salario.sl_status" name="sl_status">
+      </div>
+      <div class="text-center">
+        <button (click)="editarSalario()" class="btn btn-success">Editar</button>
+        <button (click)="voltar()" class="btn btn-secondary mx-3">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

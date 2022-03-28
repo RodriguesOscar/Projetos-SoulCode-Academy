@@ -1,0 +1,433 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background: #00b4db;
+    background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+    background: linear-gradient(to left, #00b4db, #0083b0);
+    display: block;
+    color: #fff;
+    text-align: center;
+    height: 18rem;
+}
+
+#logo {
+    height: 7rem;
+    margin-top: 5.1rem;
+    margin-bottom: 3.1rem;
+}
+
+#nav-container ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-container ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#nav-container ul a li {
+    list-style: none;
+}
+
+#dadosPai-container {
+    max-width: 280px;
+    margin: auto;
+    margin-top: 1.5rem;
+
+}
+
+#dados-container {
+    width: 100%;
+}
+
+#dados-text {
+    width: 100%;
+    height: 3rem;
+    color: #4d6f80;
+    text-align: center;
+    border-bottom: 1px solid #d3e2e5;
+    margin-bottom: 2.5rem;
+}
+
+#dadosLocal-container {
+    max-width: 280px;
+    margin-top: 1.5rem;
+
+}
+
+#local-container {
+    width: 100%;
+
+}
+
+#local-text {
+    width: 100%;
+    height: 3rem;
+    color: #4d6f80;
+    text-align: center;
+    border-bottom: 1px solid #d3e2e5;
+}
+
+#dadosContato-container {
+    max-width: 280px;
+    margin-top: 1.5rem;
+}
+
+#contato-container {
+    width: 100%;
+
+}
+
+#contato-text {
+    width: 100%;
+    height: 3rem;
+    color: #4d6f80;
+    text-align: center;
+    border-bottom: 1px solid #d3e2e5;
+}
+
+#local-inputs,
+#contato-inputs {
+    margin-top: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #4d6f80;
+    max-width: 280px;
+    margin: auto;
+}
+
+#nome,
+#cpf,
+#data,
+#genero,
+#cep,
+#uf,
+#localidade,
+#bairro,
+#logradouro,
+#tel,
+#email,
+#mensagem,
+#enviar,
+#limpar {
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    border: 1px solid #d3e2e5;
+    border-radius: 5px;
+    width: 28rem;
+    height: 4rem;
+    padding: 0.5rem;
+    background-color: #F5F8FA;
+}
+
+#mensagem {
+    margin-bottom: 0.7rem;
+    border-radius: 8px;
+    width: 28rem;
+    height: 8.4rem;
+}
+
+#genre-container {
+    height: 12rem;
+}
+
+#masculino,
+#feminino,
+#nao-quero-informar,
+#informe {
+    margin-top: 1rem;
+}
+
+#btn-container {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#enviar {
+    margin-right: 3.4rem;
+    background-color: #20CA75;
+    color: #fff
+}
+
+#limpar {
+    background-color: #e61925;
+    color: #fff;
+}
+
+#enviar,
+#limpar {
+    width: 9rem;
+    height: 3rem;
+    border: 1px solid #d3e2e5;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #00b4db;
+    background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+    background: linear-gradient(to left, #00b4db, #0083b0);
+}
+
+#social-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer h4 {
+    margin-top: 4rem;
+    color: #fff;
+}
+
+#zoom-container {
+    width: 100%;
+    justify-content: flex-end;
+    display: none;
+}
+
+#zoom-in {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+#zoom-out {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+@media(min-width: 426px) and (max-width: 1023px) {
+    #nav-container ul a {
+        font-size: 1.6rem;
+    }
+
+    #dadosPai-container {
+        max-width: 600px;
+    }
+
+    #dadosLocal-container {
+        max-width: 600px;
+    }
+
+    #dadosContato-container {
+        max-width: 600px;
+    }
+
+    #dados-text,
+    #local-text,
+    #contato-text {
+        text-align: start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    #nome,
+    #cpf,
+    #data,
+    #genero,
+    #cep,
+    #uf,
+    #localidade,
+    #bairro,
+    #logradouro,
+    #tel,
+    #email,
+    #mensagem,
+    #enviar,
+    #limpar {
+        width: 60rem;
+
+    }
+
+    #btn-container {
+        max-width: 600px;
+    }
+
+    #enviar,
+    #limpar {
+        width: 12rem;
+        height: 3rem;
+        border: 1px solid #d3e2e5;
+    }
+
+    #enviar {
+        margin-right: 3.4rem;
+        background-color: #20CA75;
+        color: #fff
+    }
+
+    #limpar {
+        background-color: #e61925;
+        color: #fff;
+    }
+}
+
+@media(min-width:1024px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    #zoom-container {
+        background: #00b4db;
+        background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+        background: linear-gradient(to left, #00b4db, #0083b0);
+        display: flex;
+        height: 3rem;
+        border-bottom: none;
+    }
+
+    #logo {
+        margin: 0;
+        margin-left: 7.4rem;
+        margin-right: 5rem;
+    }
+
+    #nav-container {
+        width: 30.9rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-container ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    #nav-container ul a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    #dadosPai-container {
+        background: #00b4db;
+        background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+        background: linear-gradient(to left, #00b4db, #0083b0);
+        max-width: 100%;
+        margin-top: 0;
+        height: 100px;
+        border-top: none;
+    }
+
+    #dados-container {
+        background: #fff;
+        max-width: 800px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #dadosLocal-container {
+        max-width: 800px;
+    }
+
+    #dadosContato-container {
+        max-width: 800px;
+    }
+
+    main {
+        background: #d3e2e5;
+        border-top: none;
+    }
+
+    form {
+        background-color: #fff;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #dadosLocal-container {
+        max-width: 800px;
+    }
+
+    #dadosContato-container {
+        max-width: 800px;
+    }
+
+    label:first-of-type {
+        margin-top: 0;
+    }
+
+    #dados-inputs,
+    #local-inputs,
+    #contato-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        margin-top: 0;
+        border: none;
+    }
+
+    #local-inputs label:first-of-type,
+    #contato-inputs label:first-of-type {
+        margin-top: 2rem;
+    }
+
+    #nome,
+    #cpf,
+    #data,
+    #genero,
+    #cep,
+    #uf,
+    #localidade,
+    #bairro,
+    #logradouro,
+    #tel,
+    #email,
+    #mensagem,
+    #enviar,
+    #limpar {
+        width: 70rem;
+        height: 4rem;
+    }
+
+    #enviar,
+    #limpar {
+        width: 12rem;
+        height: 3rem;
+        margin-left: 3rem;
+    }
+
+    #dados-text {
+        margin-top: 2rem;
+    }
+
+    #dados-text,
+    #local-text,
+    #contato-text {
+        text-align: start;
+        margin-left: 3rem;
+        max-width: 70rem;
+    }
+}

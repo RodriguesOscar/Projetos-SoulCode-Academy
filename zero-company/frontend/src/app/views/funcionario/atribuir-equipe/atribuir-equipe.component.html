@@ -1,0 +1,64 @@
+<div class="container mt-5 text-white">
+    <div class="row">
+      <div class="col-7">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dados do monstro</h5>
+            <hr>
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nome do monstro</label>
+                <input type="text" readonly class="form-control" [(ngModel)]="funcionario.func_nome" name="func_nome">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Cargo do monstro</label>
+                <input type="text"readonly class="form-control"  [(ngModel)]="funcionario.func_cargo" name="func_cargo">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Cidade do monstro</label>
+                <input type="text" readonly class="form-control" [(ngModel)]="funcionario.func_cidade" name="func_cidade">
+              </div>
+              <hr>
+              <div class="text-center">
+                <button routerLink="/lista-geral-funcionario" class="btn btn-secondary mx-3 mt-3">Voltar à página anterior</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <h5 class="card-title"> Escolha uma equipe para o monstro</h5>
+              <select class="text-center" [(ngModel)]="equipeEscolhida" name="equipeEscolhida" (ngModelChange)="mostrarEquipe()" >
+                <option value="" selected>Escolher equipe</option>
+                <option *ngFor="let equipe of equipes" [ngValue]="equipe">
+                {{equipe.eqp_nome}} - {{equipe.eqp_atribuicao}}
+                </option>
+              </select>
+              <h5 class="card-title mt-2">Equipe escolhida: {{equipeEscolhida.id_equipe}} </h5>
+            </div>
+            <hr>
+            <div class="mb-3">
+              <label class="form-label">Nome da Equipe</label>
+              <input type="text" readonly class="form-control" [(ngModel)]="equipeEscolhida.eqp_nome" name="eqp_nome">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Descrição da equipe</label>
+              <input type="text"readonly class="form-control"  [(ngModel)]="equipeEscolhida.eqp_atribuicao" name="eqp_atribuicao">
+            </div>
+            <div class="text-center">
+              <button (click)="atribuirEquipe()" class="btn btn-success mx-3">Salvar</button>
+            </div>
+            <hr>
+            <div class="card text-center">
+              <h5 class="card-title">Retirar o monstro da equipe atual?
+              <button (click)="deixarFuncionarioSemEquipe()" class="btn btn-danger mx-3 mt-2">Confirmar</button>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing-page.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/hp-logob.svg" type="image/x-icon">
+    <title>Calculadora HP</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html">
+                <img id="logo" src="img/hp-logo.svg" alt="Logo da HP">
+            </a>
+        </div>
+        <nav id="nav-container">
+            <ul>
+                <a href="calculadora.html">
+                    <li id="calculadora">Calculadoras</li>
+                </a>
+                <a href="contato.html">
+                    <li id="contato">Contato</li>
+                </a>
+                <a href="cursos.html">
+                    <li id="cursos">Cursos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="zoom-container">
+        <img id="zoom-in" src="img/zoom-in.svg" alt="Lupa que aumenta">
+        <img id="zoom-out" src="img/zoom-out.svg" alt="Lupa que diminui">
+    </div>
+    <main>
+        <div id="text-container">
+            <h1>Calculadora 50g</h1>
+            <h2>Calculadora gráfica mais avançada da HP oferece maior flexibilidade e potência para profissionais
+                dedicados à matemática, ciência, engenharia e para estudantes universitários.</h2>
+        </div>
+        <div id="img-container">
+            <img src="img/calculadora.png" alt="Calculadoras 50g">
+        </div>
+    </main>
+    <footer>
+        <div id="button-container">
+            <button id="button" href="" onclick="abrirJanela()">Sobre nós</button>
+        </div>
+        <div id="caixaMaior">
+            <div id="faixaVermelha">
+                <p id="cabecalhoCaixa">Desenvolvedores G7</p>
+            </div>
+            <div id="caixaMensagem">
+                <p id="mensagemCaixa">Danyllo Pires, Oscar Rodrigues, José Eduardo, Gabriel Martins, Anderson Santos</p>
+                <button id="botaoOk" onclick="fecharJanela()">OK</button>
+            </div>
+        </div>
+        <div id="social-container">
+            <a href="https://www.instagram.com/hp/?utm_medium=copy_link" target="_blank">
+                <img class="soc" src="img/insta-logo.svg" alt="Logo do Instagram">
+            </a>
+            <a href="https://twitter.com/hpbrasil" target="_blank">
+                <img class="soc" src="img/twitter-logo.svg" alt="Logo do Twitter ">
+            </a>
+            <a href="https://www.facebook.com/HP" target="_blank">
+                <img class="soc" src="img/facebook-logo.svg" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/hp/" target="_blank">
+                <img class="soc" src="img/linkedin-logo.svg" alt="Logo do LinkedIn">
+            </a>
+        </div>
+        <h4>HP Brasil Oficial All Rights Reserved®</h4>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-size: 100%;
+}
+
+body{
+
+  background-color: #21094E;
+  overflow-x: hidden;
+}
+
+
+/* HEADER NAVBAR */
+
+/* MENU MOBILE */
+#btn-mobile {
+  display: none;
+}
+
+/* PAINEL */
+#painel-container{
+  
+  display: none;
+  background-color: #21094E;
+
+}
+
+#painel-title{
+  color: #4CA1A3;
+}
+
+#painel-subtitle{
+  color: #F6F7D4;
+}
+
+/* BOTÃO HAMBURGER E ESTRUTURA MOBILE DO MENU */
+@media (max-width: 800px){
+  #menu{
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 80px;
+    right: 0px;
+    background-color: #4ca1a3c9;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu-principal.active #menu {
+    height: calc(100vh - 89px);
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu li a{
+    padding: 1rem;
+    margin: 0 1rem;
+    
+    border-bottom: 2px solid rgba(46, 4, 85, 0.322);
+  }
+
+  #btn-mobile{
+    display: flex;
+    padding: 1rem 1rem;
+    border: none;
+    background: none;
+    gap: .5rem;
+    color: #4ca1a3c9;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #menu-principal.active #hamburger{
+    border-top-color: transparent;
+  }
+
+  #menu-principal.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #menu-principal.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  /* FIM DO MENU HAMBURGER */
+
+  #painel-container{display: block;}
+
+  #painel-title{font-size: 24px;}
+  
+  #painel-subtitle {font-size: 14px;}
+
+}
+
+
+#menu-principal{
+  background-color: #21094E;
+  height: 80px;
+  width: 100vw;
+}
+
+#logo{
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.4rem;
+}
+
+#logo p{
+  color: #F6F7D4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: -18px;
+}
+/* 
+#navbarText li:nth-child(4){
+  position: relative;
+  right: -70%;
+} */
+
+#menu li a{
+  color: #F6F7D4;
+  font-size: 1.3rem;
+}
+
+.menuDrop{
+  background-color: #4CA1A3;
+}
+
+.btnAcessibilidade li input{
+  background: transparent;
+  border: none;
+  color: #F6F7D4;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  
+}
+
+/* FIM DO HEADER NAVBAR */
+
+
+/* CAROUSEL */
+.textoLateral{
+  height: 100%;
+} 
+
+
+.esquerda{
+  background-color: #5b3c94ab;
+  height: 100vh;
+  width: 600px;
+  margin-left: -20%;
+}
+
+.textoLateral h5{
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+  font-size: 2rem;
+  padding: 10px;
+  margin-top: 130px;
+}
+
+.textoLateral p{
+  color: #F6F7D4;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.btnCarousel{
+  text-align: center;
+  
+  background-color: #4ca1a3da;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  min-width: 100px;
+  width: 300px;
+  height: 60px;
+
+  box-shadow: 2px 2px 0px 1px #4CA1A3;
+}
+
+.btnCarousel a{
+  font-family: 'Audiowide', cursive;
+  font-size: 1.2rem;
+  
+  color: #F6F7D4;
+  text-decoration: none;
+}
+
+.btnCarousel:hover{
+  background-color: #4CA1A3;
+}
+
+.btnCarousel:active{
+  box-shadow: 0 0 0 0 #4CA1A3, inset 3px 3px 3px #4CA1A3;
+  transform: translate(3px, 3px);
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+  .carouselCont{
+    height: 100px;
+    width: 100vw;
+  }
+  
+  .esquerda{
+    height: 20vw;
+    width: 100%;
+    margin-left: -15%;
+  }
+  
+  .textoLateral h5{
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  
+  .textoLateral p{
+    font-size: 1.4rem;
+  }
+
+  .btnCarousel{
+    top: 70%;
+    left: 30%;
+    width: 200px;
+    height: 40px;
+  }
+
+  .btnCarousel a{
+    font-size: .8rem;
+  }
+
+  #painel-container{display: none;}
+
+}
+
+/* FOOTER */
+#footerQuem{
+  background-color: #1E2222;
+  height: 150px;
+  color: #F6F7D4;
+  
+}
+
+#painel-btn{
+  
+  font-family: 'Audiowide', cursive;
+  background-color: #4CA1A3;
+  color: #F6F7D4;
+
+}
+/* FIM DO FOOTER */

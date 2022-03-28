@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Mídias sociais em smartphones e tablets */
+#whats, #insta, #face{
+  color: rgb(232, 95, 28);
+  font-size: 2rem;
+}
+
+#whats:hover, #insta:hover, #face:hover{
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 769px) and (max-width: 2560px){
+  .social-media{display: none}
+}
+
+footer{
+  background: linear-gradient(to right, #13293D, #006494);
+}
+
+.dropdown-menu, .dropdown-item:hover{
+  background: linear-gradient(to right, #13293D, #006494);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dropdown-menu:hover, .dropdown-item:hover{
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+h6, span, .nav-icon{
+  color: rgb(232, 95, 28);
+}

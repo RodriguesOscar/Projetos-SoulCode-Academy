@@ -1,0 +1,567 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-size: 100%;
+}
+
+body{
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
+/* HEADER NAVBAR */
+
+/* MENU MOBILE */
+#btn-mobile {
+  display: none;
+}
+
+/* BOTÃO HAMBURGER E ESTRUTURA MOBILE DO MENU */
+@media (max-width: 800px){
+  #menu{
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 80px;
+    right: 0px;
+    background-color: #4ca1a3c9;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu-principal.active #menu {
+    height: calc(100vh - 89px);
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu li a{
+    padding: 1rem;
+    margin: 0 1rem;
+    
+    border-bottom: 2px solid rgba(46, 4, 85, 0.322);
+  }
+
+  #btn-mobile{
+    display: flex;
+    padding: 1rem 1rem;
+    /* font-size: 1rem; */
+    border: none;
+    background: none;
+    gap: .5rem;
+    color: #4ca1a3c9;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #menu-principal.active #hamburger{
+    border-top-color: transparent;
+  }
+
+  #menu-principal.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #menu-principal.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  /* FIM DO MENU HAMBURGER */
+}
+
+
+#menu-principal{
+  background-color: #21094E;
+  height: 80px;
+  width: 100vw;
+}
+
+#logo{
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.4rem;
+}
+
+#logo p{
+  color: #F6F7D4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: -18px;
+}
+/* 
+#navbarText li:nth-child(4){
+  position: relative;
+  right: -70%;
+} */
+
+#menu li a{
+  color: #F6F7D4;
+  font-size: 1.3rem;
+}
+
+.menuDrop{
+  background-color: #4CA1A3;
+}
+
+.btnAcessibilidade li input{
+  background: transparent;
+  border: none;
+  color: #F6F7D4;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  
+}
+
+/* FIM DO HEADER NAVBAR */
+
+/* MAIN / QUEM SOMOS */
+.qSomos{
+  margin-left: 6%;
+}
+
+.qSomos img{
+  width: 350px;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+#roxo{
+  position: relative;
+  width: 60vw;
+  height: 20vw;
+  background-color: #511281;
+  top: 100px;
+  border-radius: 30px;
+}
+
+.qSomos h3{
+  color: #511281;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -40px;
+}
+
+#verde{
+  position: relative;
+  top: 40%;
+  width: 60vw;
+  height: 20vw;
+  background-color: #4CA1A3;
+  left: 30%;
+  border-radius: 30px;
+}
+
+#transparente{
+  position: absolute;
+  left: 14%;
+  top: 50%;
+  width: 60vw;
+  height: 20vw;
+  background-color: #f6f7d49f;
+  border-radius: 30px;
+}
+
+#transparente p{
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #21094E;
+}
+
+#transparente mark{
+  background-color: #F6F7D4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px #F6F7D4 ;
+}
+
+
+@media (max-width: 1024px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .qSomos{
+    margin-bottom: 550px;
+    width: 80vw;
+  }
+
+  .qSomos img{
+    width: 100px;
+    top: 30%;
+    left: 35%;
+  }
+
+  .qSomos h3{
+    font-size: 2rem;
+  }
+
+
+  #transparente{
+    width: 75vw;
+    height: 50vw;
+  }
+
+  #transparente p{
+    font-size: 1.1rem;
+  }
+  
+}
+/* FIM MAIN / QUEM SOMOS */
+
+/* MAIN TABELA - VISÃO MISSÃO VALORES */
+#tabelaMvv{
+  margin: 0 auto;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+table td{
+  border:none !important;
+}
+
+tr .missao{
+  background-color: #A5E1AD; 
+  font-size: 1.8rem; 
+  color: #511281;
+  min-width: 300px;
+}
+
+.missaoM{
+  border-radius: 20px 0 0 0;
+}
+
+.missaoP{
+  border-radius: 0 0 0 20px;
+}
+
+tr .missao p{
+  padding: 10px;
+}
+
+
+tr .visao{
+  background-color: #4CA1A3; 
+  color: #21094E; 
+  font-size: 1.8rem;
+  min-width: 300px;
+}
+
+tr .visao p{
+  padding: 10px;
+}
+
+tr .valores{
+  background-color: #3e175c; 
+  font-size: 1.8rem; 
+  color: #F6F7D4;
+  min-width: 300px;
+}
+
+.valoresV{
+  border-radius: 0 20px 0 0;
+}
+
+.valoresP{
+  border-radius: 0 0 20px 0;
+}
+
+tr .valor p{
+  padding: 10px;
+}
+/* FIM MAIN TABELA - VISÃO MISSÃO VALORES */
+
+
+/* NOSSO TIME */
+
+.nosso-time{
+  margin: 40px 0 10px 0;
+  color: #3e175c;
+  font-family: 'Audiowide', cursive;
+  font-size: 2rem;
+}
+
+.linha-card {
+  margin: 20px 0 200px 0;
+}
+
+#redes{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 10000;
+  height: 0;
+}
+
+#redes i{
+  color: #511281;
+}
+
+
+.click{
+  position: absolute;
+  left: 35%;
+  top: 75%;
+  color: #fdfffe;
+  font-size: .8rem;
+}
+
+.back{
+  padding: 20px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+  cursor: pointer;
+}
+
+.card-flip {
+  display: grid;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.linha-base{
+  background-color: #511281;
+  color: #F6F7D4;
+  height: 100%;
+}
+
+
+.front {
+  grid-area: frontAndBack;
+  background-color: #A5E1AD;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+
+  background-color: #511281;
+  color: #F6F7D4;
+}
+
+.card-container.fliper .card-flip {
+  transform: rotateY(180deg);
+}
+
+.linkPortifolio{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.linkPortifolio a{
+ text-decoration: none;
+ color: #4CA1A3;
+ font-family: 'Audiowide', cursive;
+}
+
+
+/* FIM NOSSO TIME */
+
+
+
+/* SCROLLSPY */
+
+.titulo-scroll{
+  color: #3e175c;
+  font-family: 'Audiowide', cursive;
+  font-size: 2rem;
+}
+
+.scrollspySite{
+  position: relative;
+  overflow: auto;
+  height: 25vw;
+  overflow-x: hidden;
+}
+
+
+.imagemScroll{
+  max-width: 70%;
+  max-height: auto;
+  border-radius: 20px;
+  margin-left: 15%;
+}
+
+.linhaScroll{
+  margin-bottom: 30px;
+}
+
+.linhaScroll h4{
+  font-size: 1.5rem;
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+}
+
+.linhaScroll p{
+  text-align: left;
+  margin: 10% 20% 0 0;
+  font-size: 2rem;
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+}
+
+
+#lista a{
+  font-size: 2vw;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #4CA1A3;
+  
+}
+
+
+@media (max-width: 800px){
+  .scrollspySite{
+    height: 30vw;
+  }
+}
+
+@media (max-width: 400px){
+  .scrollspySite{
+    height: 75vw;
+  }
+
+  .linhaScroll p{
+    font-size: .8rem;
+  }
+}
+/* FIM DO SCROLLSPY */
+
+/* MODAL O FUTURO... */
+.modal-body{
+  background-image: url('img/backgroundmodal.jpg');
+}
+
+.modal-body div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-body div button{
+  color: rgb(211, 12, 12);
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Audiowide', cursive;
+
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 30px;
+}
+
+.tituloModal{
+  font-size: 2.8rem;
+  padding: 10px;
+}
+
+.tituloModal span{
+  font-family: 'Audiowide', cursive;
+  color: #4CA1A3;
+}
+
+.textoModal p{
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: justify;
+}
+
+#lista .btnFuturo{
+ color: #511281;
+ transform: scale(.9);
+ transition: .2s ease;
+}
+
+#lista .btnFuturo:hover{
+  box-shadow: 3px 3px 10px #F6F7D4;
+  transform: scale(1);
+  transition: .2s ease;
+}
+
+/* FIM DO MODAL */
+
+/* MAPA */
+.mapCont{
+  margin-top: 10%;
+}
+
+
+#mapa{
+  height: 400px;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.mapa h3{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30%;
+  padding: 10px;
+  color: #4CA1A3;
+}
+
+
+.mapa h3 i{
+  color: red;
+}
+
+.mapa p{
+  text-align: center;
+  font-size: 1rem;
+  color: #1E2222;
+}
+
+/* SETA PARA CIMA */
+.arrow{
+position: relative;
+bottom: -395%;
+left: 90%;
+}
+
+
+/* FOOTER */
+#footerQuem{
+  background-color: #1E2222;
+  height: 150px;
+  color: #F6F7D4;
+  
+}
+
+/* FIM DO FOOTER */

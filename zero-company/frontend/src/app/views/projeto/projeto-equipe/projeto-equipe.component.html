@@ -1,0 +1,62 @@
+<div class="container mt-5 text-white">
+  <div class="row">
+    <div class="col-7">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Dados da Equipe</h5>
+          <hr>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome da Equipe</label>
+              <input type="text" readonly class="form-control" [(ngModel)]="equipe.eqp_nome" name="eqp_nome">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Descrição da Equipe</label>
+              <input type="text" readonly class="form-control" [(ngModel)]="equipe.eqp_atribuicao"
+                name="eqp_atribuicao">
+            </div>
+            <hr>
+            <div class="text-center">
+              <button routerLink="/equipes" class="btn btn-secondary mx-3 mt-3">Voltar à página anterior</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="text-center">
+            <h5 class="card-title"> Escolha uma tarefa para a equipe</h5>
+            <select class="text-center" [(ngModel)]="projetoSemEquipeEscolhido" name="projetoSemEquipeEscolhido"
+            (ngModelChange)="mostrarProjeto()">
+            <option value="" selected>Escolher tarefa</option>
+            <option *ngFor="let projeto of projetosSemEquipe" [ngValue]="projeto">
+              {{projeto.pro_nome}} - {{projeto.pro_descricao}}
+            </option>
+            </select>
+            <h5 class="card-title mt-2">Projeto da Equipe: {{projeto.id_projeto}}</h5>
+          </div>
+          <hr>
+          <div class="mb-3">
+            <label class="form-label">Nome do Projeto</label>
+            <input type="text" readonly class="form-control" [(ngModel)]="projeto.pro_nome" name="pro_nome">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Descrição do Projeto</label>
+            <input type="text" readonly class="form-control" [(ngModel)]="projeto.pro_descricao" name="pro_descricao">
+          </div>
+          <div class="text-center">
+            <button (click)="atribuirProjeto()" class="btn btn-success mx-3">Salvar</button>
+          </div>
+          <hr>
+          <div class="card text-center">
+            <h5 class="card-title">Retirar a equipe da tarefa atual?
+            <button (click)=" deixarEquipeSemProjeto()" class="btn btn-danger mx-3 mt-2">Confirmar</button>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

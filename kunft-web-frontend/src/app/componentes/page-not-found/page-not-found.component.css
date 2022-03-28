@@ -1,0 +1,23 @@
+#pnf-container{
+  margin-top: 90px;
+  margin-bottom: 230px;
+}
+
+#inicio-btn{
+
+  text-align: center;
+  background: linear-gradient(to top, #13293D, #006494);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 0px 1px #ffffff;
+}
+
+#inicio-btn:hover{
+  background-color: #4CA1A3;
+}
+
+#inicio-btn:active{
+  box-shadow: 0 0 0 0 #4CA1A3, inset 3px 3px 3px #4CA1A3;
+  transform: translate(3px, 3px);
+}

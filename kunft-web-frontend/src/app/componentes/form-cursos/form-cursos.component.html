@@ -1,0 +1,47 @@
+<div class="card px-3">
+  <div class="card-body">
+    <h5>{{tituloForm}}</h5>
+  </div>
+
+  <form [formGroup] = "form">
+
+    <div class="input-group mb-2">
+      <span class="input-group-text"><i class="bi bi-projector-fill"></i></span>
+      <input type="text" class="form-control" placeholder="Nome do curso" formControlName="nome" [class.valido] ="this.form.get('nome')?.valid" [class.invalido]="this.form.get('nome')?.invalid && this.form.get('nome')?.touched">
+    </div>
+
+    <div class="input-group mb-2">
+      <label class="titulo" for="">Selecione a categoria</label>
+    </div>
+    <div class="mb-2">
+      <select class="form-control" name="tema" formControlName="tema" [class.valido] ="this.form.get('tema')?.valid" [class.invalido]="this.form.get('tema')?.invalid && this.form.get('tema')?.touched">
+        <option value="" checked>Selecionar categoria</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JavaScript</option>
+        <option value="ANGULAR">AngularJS</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-2">
+      <label for="exampleFormControlTextarea1" class="form-label titulo">Descrição do curso</label>
+    </div>
+    <div class="mb-2">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descreva o curso" formControlName="descricao" [class.valido] ="this.form.get('descricao')?.valid" [class.invalido]="this.form.get('descricao')?.invalid && this.form.get('descricao')?.touched"></textarea>
+    </div>
+    <div class="input-group mb-2">
+      <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+      <input type="number" class="form-control" placeholder="Preço do curso" formControlName="preco" [class.valido] ="this.form.get('preco')?.valid" [class.invalido]="this.form.get('preco')?.invalid && this.form.get('preco')?.touched">
+    </div>
+    <div class="mb-2 titulo">
+      Ilustração do curso
+    </div>
+    <div class="input-group mb-2">
+      <input type="file" accept=".png, .jpg, .jpeg" (change)="carregarImagem($event)" class="form-control" placeholder="Foto do funcionário" formControlName="foto">
+    </div>
+
+    <button [disabled]="form.invalid" class="btn btn-success mb-2" (click)="salvarCurso()">Salvar</button>
+  </form>
+
+</div>
+

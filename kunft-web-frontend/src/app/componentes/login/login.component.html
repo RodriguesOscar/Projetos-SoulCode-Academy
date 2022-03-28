@@ -1,0 +1,32 @@
+<div id="login-container" class="container mt-3">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+      <div class="card my-4 mt-5 p-4 shadow-lg">
+
+        <h4 class="text-center mb-4">Administração</h4>
+      
+        <form class="row" [formGroup]="form">
+      
+          <div class="input-group mb-4">
+            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+            <input type="email" class="form-control" placeholder="E-mail do administrador" formControlName="email"
+              [class.valido]="this.form.get('email')?.valid"
+              [class.invalido]="this.form.get('email')?.invalid && this.form.get('email')?.touched">
+          </div>
+      
+          <div class="input-group mb-2">
+            <span id="olho" class="olho" class="input-group-text"><i class="bi bi-key-fill"></i></span>
+            <input id="password" type="password" class="form-control" placeholder="Senha do administrador" formControlName="senha"
+              [class.valido]="this.form.get('senha')?.valid"
+              [class.invalido]="this.form.get('senha')?.invalid && this.form.get('senha')?.touched">
+          </div>
+          <div class="text-center">
+            <button (click)="fazerLogin()" class="btn btn-primary mt-3">Logar</button>
+          </div>
+      
+        </form>
+      
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-menu, .navbar{
+  background: linear-gradient(to right, #13293D, #006494);
+}
+
+h1, .nav-icon, .nav-title{
+  color: rgb(232, 95, 28);
+}
+
+#whats, #insta, #face{
+  font-size: 2rem;
+}
+
+#whats:hover, #insta:hover, #face:hover{
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  .social-media{display: none}
+}

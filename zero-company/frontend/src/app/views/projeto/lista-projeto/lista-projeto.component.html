@@ -1,0 +1,40 @@
+<div class="card mt-5 text-white text-center">
+  <div class="card-body">
+    <h5 class="card-title">Tarefas</h5>
+    <hr>
+    <div style="height: 300px; overflow: auto;">
+      <table class="table text-white text-center">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome da tarefa</th>
+            <th scope="col">Descrição da tarefa</th>
+            <th scope="col">Equipe</th>
+            <th scope="col">Descrição da Equipe</th>
+            <th scope="col">Atribuir Equipe</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let projeto of projetos">
+            <th scope="row">{{projeto.id_projeto}}</th>
+            <td>{{projeto.pro_nome}}</td>
+            <td>{{projeto.pro_descricao}}</td>
+            <td>{{projeto.eqp_nome}}</td>
+            <td>{{projeto.eqp_atribuicao}}</td>
+            <td>
+              <button class="btn" routerLink="/projeto/atribuirEquipe/{{projeto.id_projeto}}">Atribuir</button>
+            </td>
+            <td>
+              <i routerLink="/edicao-projeto/{{projeto.id_projeto}}" class="bi bi-pen-fill text-success"></i>
+              <i routerLink="/exclusao-projeto/{{projeto.id_projeto}}" class="bi bi-trash-fill text-danger mx-2" ></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center">
+      <button class="btn" routerLink="/projeto/cadastro" >Cadastrar tarefa</button>
+    </div>
+  </div>
+</div>

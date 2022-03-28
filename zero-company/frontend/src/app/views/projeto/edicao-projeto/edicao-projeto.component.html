@@ -1,0 +1,20 @@
+<div class="card mt-5 text-white">
+  <div class="card-body">
+    <h5 class="card-title">Editar dados da tarefa</h5>
+    <hr>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Nome da tarefa</label>
+        <input type="text" class="form-control" [(ngModel)]="projeto.pro_nome" name="pro_nome">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Descrição da tarefa</label>
+        <input type="text" class="form-control" [(ngModel)]="projeto.pro_descricao" name="projeto.pro_descricao">
+      </div>
+      <div class="text-center">
+        <button (click)="editarProjeto()" class="btn btn-success">Editar</button>
+      <button  (click)="cancelarEdicao()" class="btn btn-secondary mx-3">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

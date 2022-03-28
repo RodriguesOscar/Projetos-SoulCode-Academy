@@ -1,0 +1,327 @@
+body {
+    background: #00b4db;
+    background: -webkit-linear-gradient(to left, #00b4db, #0083b0);
+    background: linear-gradient(to left, #00b4db, #0083b0);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    /* overflow-y: hidden; */
+}
+
+header {
+    display: block;
+    text-align: center;
+}
+
+#logo {
+    height: 6rem;
+    margin-top: 5.1rem;
+    margin-bottom: 3.1rem;
+}
+
+#nav-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8rem;
+}
+
+#nav-container ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#nav-container ul a li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#text-container h1 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+#button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor:pointer;
+
+    width: 10.5rem;
+    height: 5.7rem;
+    color: #fff;
+    font-size: 1.4rem;
+
+    background-color: #000;
+    border-radius: 1.2rem;
+
+    margin-bottom: 6rem;
+}
+
+#caixaMaior{
+    display: none;
+    width: 500px;
+    height: 300px;
+    background-color: #00b4db;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border: solid 2px#F8F8FF;
+    border-radius: 5px;
+}
+
+#mensagemCaixa{
+    width: 300px;
+    margin: auto;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#caixaMensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer; 
+}
+
+#cabecalhoCaixa{
+    font-size:4rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#botaoOk{
+    width: 70px;
+    height: 40px; 
+    margin-top: 13px; 
+    border-radius: 5px;
+    box-shadow:2px 2px 2px 2px #f8f8ffdc ;
+    curosr: pointer;
+}
+
+#button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    width: 10.5rem;
+    height: 5.7rem;
+    color: #fff;
+
+
+    transition: 500ms;
+    background-color: #003D99;
+    border-radius: 1.2rem;
+
+    margin-bottom: 6rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30rem;
+    margin: auto;
+}
+
+#social-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer h4 {
+    margin-top: 4rem;
+}
+
+#zoom-container {
+    width: 100%;
+    justify-content: flex-end;
+    display: none;
+}
+
+#zoom-in {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+#zoom-out {
+    float: right;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+@media(min-width: 426px) and (max-width: 1023px) {
+    #nav-container ul a {
+        font-size: 1.6rem;
+    }
+
+    #text-container h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #button {
+        margin-bottom: 3rem;
+    }
+}
+
+@media(min-width:1024px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 7.4rem;
+        width: 100%;
+        margin-bottom: 4.5rem;
+    }
+
+    #logo {
+        height: 9rem;
+        margin: 0;
+        margin-left: 7.4rem;
+        margin-right: 5rem;
+    }
+
+    #nav-container {
+        width: 30.9rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #nav-container ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    #nav-container ul a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    #zoom-container {
+        display: flex;
+        height: 3rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 13rem;
+        align-items: center;
+        height: 250px;
+    }
+
+    #text-container {
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+        margin-left: 7.4rem !important;
+        margin-top: 4.5rem;
+        margin-right: 10rem;
+        width: 50rem;
+        max-width: none;
+
+    }
+
+    #text-container h1 {
+        width: 50.4rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 5rem;
+    }
+
+    h2 {
+        width: 50.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+    }
+
+    #img-container img {
+        height: 25rem;
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        margin-top: 3rem;
+        /* height: 400px; */
+    }
+}
+
+@media(min-width:1440px) {
+    header {
+        margin-bottom: 8rem;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 13rem;
+        align-items: center;
+        height: 250px;
+    }
+
+
+    #text-container h1 {
+        font-size: 6.4rem;
+    }
+
+    h2 {
+        line-height: 2.5rem;
+    }
+
+    #img-container img {
+        height: 40rem;
+        margin-bottom: 5rem;
+
+    }
+
+    footer {
+        margin-top: 8rem;
+    }
+
+}

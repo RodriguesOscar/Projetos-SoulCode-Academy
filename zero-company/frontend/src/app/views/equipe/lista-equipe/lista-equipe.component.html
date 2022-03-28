@@ -1,0 +1,45 @@
+<div class="card mt-5 text-white text-center">
+  <div class="card-body">
+    <h5 class="card-title">Equipes</h5>
+    <hr>
+    <div style="height: 300px; overflow: auto;">
+      <table class="table text-white text-center">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome da equipe</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Monstros</th>
+            <th scope="col">Tarefas</th>
+            <th scope="col">Descrição da tarefa</th>
+            <th scope="col">Atribuir tarefa</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let equipe of equipes">
+            <th scope="row">{{equipe.id_equipe}}</th>
+            <td>{{equipe.eqp_nome}}</td>
+            <td>{{equipe.eqp_atribuicao}}</td>
+            <td>
+              <img routerLink="/funcionario/listaDaEquipe/{{equipe.id_equipe}}" class="img-responsive" src="../../../assets/images/avatar.png" alt="" style="width: 19px">
+              <!-- <i class="bi bi-people-fill text-info"></i> -->
+            </td>
+            <td>{{equipe.pro_nome}}</td>
+            <td>{{equipe.pro_descricao}}</td>
+            <td>
+              <button class="btn" routerLink="/projeto-equipe/{{equipe.id_equipe}}">Atribuir</button>
+            </td>
+            <td>
+              <i class="bi bi-pen-fill text-success" routerLink="/edicao-equipe/{{equipe.id_equipe}}"></i>
+              <i class="bi bi-trash-fill text-danger mx-2" routerLink="/exclusao-equipe/{{equipe.id_equipe}}"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center">
+      <button (click)="navegarCadastroEquipe()" class="btn">Cadastrar equipe</button>
+    </div>
+  </div>
+</div>

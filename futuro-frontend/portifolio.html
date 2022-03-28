@@ -1,0 +1,323 @@
+<!--morelliduarte@yahoo.com.br-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <!-- FIM DAS FONTES -->
+
+  <!-- PARA ICONES DO BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+  <title>Portfólio</title>
+
+  <!-- ICONE DA BARRA DE NAVEGAÇÃO -->
+  <link rel="shortcut icon" type="imagex/png" href="img/ferramentas-de-design.png">
+
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" style="background-image: url('img/background.jpeg');">
+
+  <header>
+    <div class="containe-fluid">
+
+      <nav class="navbar navbar-expand-md" id="menu-principal">
+
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand mx-3 " href="index.html">Futuro <p>Front-End</p></a>
+
+          <!-- BOTÃO PARA O MENU MOBILE -->
+          <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false">
+
+            <span id="hamburger"></span>
+          </button>
+
+
+          <ul id="menu" role="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active " aria-current="page" href="sobre.html">Sobre</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link " href="portifolio.html">Portfólio</a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="formulario.html">Serviços</a>
+            </li>
+
+
+            <li class=" nav-item dropdown">
+
+              <a href="#" class="nav-link dropdown-toggle mx-5 " id="" data-bs-toggle="dropdown" aria-expanded="false">
+                Acessibilidade
+              </a>
+
+              <ul class="dropdown-menu menuDrop btnAcessibilidade" aria-labelledby="navbarScrollingDropdown">
+                <li><input type="button" onclick="fonte('a')" value="Aumentar a fonte">
+                </li>
+
+                <li><input type="button" onclick="fonte('d')" value="Diminuir a fonte">
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--INICIO DO CARROSSEL BOOTSTRAP-->
+    <section id="portInicio">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/portifolio1.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/portifolio2.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/portifolio3.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/portifolio4.png" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--Inicio da seção dos trabalhos das equipes -->
+    <div class="container" id="trabalhoEquipe">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mt-5">
+          <div id="trocImg1">
+            <h1>Portifólio</h1>
+            <p class="acessibilidade" style="font-size: 22px;">Segue o portifólio dos nossos Desenvolvedores Full
+              Stack</p>
+
+            <p class="acessibilidade" style="font-size: 22px;">Toda a equipe de desenvolvimento domina as principais
+              ferramentas e conceitos de boas práticas. </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5">
+          <div id="trocImg2"></div>
+        </div>
+      </div>
+    </div>
+    <!--Finalizado Seção-->
+    <section>
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12  titleP">
+              <h3 class="main-title" id="nos">Conheça nossos novos projetos</h3>
+            </div>
+            <!-- BOTÕES DO FILTRO -->
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+
+              <button class="main-btn filter-btn" id="andre-btn">Andre</button>
+
+              <button class="main-btn filter-btn" id="dionatam-btn">Dionatam</button>
+
+              <button class="main-btn filter-btn" id="joao-btn">João</button>
+
+              <button class="main-btn filter-btn" id="oscar-btn">Oscar</button>
+            </div>
+
+            <!-- AREA PARA COLOCAR IMAGENS DOS PROJETOS -->
+
+            <div class="col-md-4 projet-box andre">
+              <img src="img/banner5.png" alt="Projetado por Andre" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box andre">
+              <img src="img/banner2.png" alt="Projetado por Andre" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box dionatam">
+              <img src="img/GamerIndie-Br.png" alt="Projetado por Dionatam" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box dionatam">
+              <img src="img/FunkPô.png" alt="Projetado por Dionatam" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box joao">
+              <img src="img/bannerjoao.jpg" alt="Projetado por João" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box joao">
+              <img src="img/bannerjoao2.jpg" alt="Projetado por João" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box oscar">
+              <img src="img/banneroscar.jpg" alt="Projetado por Oscar" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 projet-box oscar">
+              <img src="img/banneroscar2.jpg" alt="Projetado por Oscar" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Area pra colocar um banner com frase e ilustração -->
+    <div class="container" id="infoGerais">
+      <section>
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-8 col-sm-12">
+              <h3 class="acessibilidade p1 mt-4">Dispositivos Móveis Site responsivo</h3>
+              <p class="acessibilidade p1">Web design responsivo é uma abordagem ao design da Web que faz as
+                páginas
+                da web renderizarem bem em uma variedade de dispositivos e tamanhos de janela ou tela do mínimo ao
+                máximo.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="img-fluid img1" src="img/responivo.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div  class="container">
+          <div class="row align-items-start">
+            <div class="col-md-8 col-sm-12">
+              <h3 class="acessibilidade p1 mt-4">E-commerce Layout e Integração com API</h3>
+              <p class="acessibilidade p1"> O e-commerce digitaliza integralmente dois processos básicos: venda e
+                atendimento ao cliente. A partir desse trabalho, ele também abre as portas para outras automações, como
+                marketing, controle de finanças e estoque.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="img-fluid img1" src="img/e-commerce.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div  class="container">
+          <div class="row align-items-start">
+            <div class="col-md-8 col-sm-12">
+              <h3 class="acessibilidade p1 mt-4">Criação Design e Usabilidade </h3>
+              <p class="acessibilidade p1 "> Design de Site criado por designers experientes.
+                Primeiramente compreenderemos seu negócio, quem é seu público alvo, quais mensagens deverão ser
+                transmitidas e de que maneira.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="img-fluid img1" src="img/design.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-8 col-sm-12">
+              <h3 class="acessibilidade p1 mt-4" >SEO Rank Google </h3>
+              <p class="acessibilidade p1" > O PageRank sistema de ranqueamento de páginas. Quanto mais alto é
+                PageRank mais autorudade ele tem. Os algoritmos interpreta como uma forma de avaliação da importância de
+                uma página ao analisar a quantidade e qualidade dos links.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="img-fluid img1" src="img/ranking.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- SETA PARA O INICIO DA PAGINA -->
+  <a href="portifolio.html#portInicio"><i class="bi bi-arrow-up-circle-fill h2 text-dark arrow"></i></a>
+
+  <!--Inicio Footer-->
+  <footer id="footerQuem">
+    <div class="container fluid text-center">
+      <div class="container my-4">
+
+        <div class="row">
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-envelope text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-telegram text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-whatsapp text-white mx-1 h2"></i></a>
+          </div>
+
+          <div class="col-3  mt-2 p-3">
+            <a href="#"><i class="bi bi-instagram text-white mx-1 h2"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <small>&copy; 2021 Futuro Front-End</small>
+
+    </div>
+  </footer>
+
+  <!-- VLIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <!-- JS DO VLIBRAS -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- FIM DO VLIBRAS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h4, h6{
+  color: rgb(232, 95, 28);
+}
+
+.card, .table{
+  background: linear-gradient(to left, #13293D, #006494);
+}
+
+i{
+  cursor: pointer;
+}
+
+#editar{
+  background-color: rgb(0, 128, 0);
+}
+
+#excluir{
+  background-color: rgb(255, 0, 0);
+}

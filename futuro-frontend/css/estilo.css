@@ -1,0 +1,322 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body{
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  /* MENU MOBILE */
+#btn-mobile {
+  display: none;
+}
+
+/* BOTÃO HAMBURGER E ESTRUTURA MOBILE DO MENU */
+@media (max-width: 800px){
+  #menu{
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 80px;
+    right: 0px;
+    background-color: #4ca1a3c9;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu-principal.active #menu {
+    height: calc(100vh - 89px);
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu li a{
+    padding: 1rem;
+    margin: 0 1rem;
+    
+    border-bottom: 2px solid rgba(46, 4, 85, 0.322);
+  }
+
+  #btn-mobile{
+    display: flex;
+    padding: 1rem 1rem;
+    /* font-size: 1rem; */
+    border: none;
+    background: none;
+    gap: .5rem;
+    color: #4ca1a3c9;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #menu-principal.active #hamburger{
+    border-top-color: transparent;
+  }
+
+  #menu-principal.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #menu-principal.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  /* FIM DO MENU HAMBURGER */
+}
+
+
+#menu-principal{
+  background-color: #21094E;
+  height: 80px;
+  width: 100vw;
+}
+
+#logo{
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.4rem;
+}
+
+#logo p{
+  color: #F6F7D4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: -18px;
+}
+/* 
+#navbarText li:nth-child(4){
+  position: relative;
+  right: -70%;
+} */
+
+#menu li a{
+  color: #F6F7D4;
+  font-size: 1.3rem;
+}
+
+.menuDrop{
+  background-color: #4CA1A3;
+}
+
+.btnAcessibilidade li input{
+  background: transparent;
+  border: none;
+  color: #F6F7D4;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  
+}
+
+/* FIM DO HEADER NAVBAR */
+
+
+
+
+  /* SESSÃO: Nossos Trabalhos */
+#trabalhoEquipe{
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#trocImg1 {
+    flex: 25%;
+    max-width: 500px;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+#trocImg2 {
+    width: 100%;
+    height: 45vh;
+    flex-grow: 1,5; 
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#trocImg1 h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Audiowide', cursive;
+}
+
+#trocImg1 p{
+    
+    font-weight: bold;
+    font-size: larger;
+
+}
+#trocImg1 button{
+    margin-left: -120px;
+    margin-top: 20px;
+    background-color: #f2bb29;
+    font-style: italic;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 40px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+#trocImg1 button:hover {
+    background-color: #fa7f0b;
+    text-decoration: underline;
+}
+
+#trocImg1 a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#trocImg1 a:visited {
+    text-decoration: none;
+    color: white;
+}
+/**/
+/* Parte dos nossos projetos */
+
+.main-title{
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Audiowide', cursive;
+  }
+  
+  .projet-box{
+    margin-bottom: 30px;
+  }
+  
+  #filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #portfolio-area{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .andre img, .dionatam img, .joao img, .oscar img{
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #21094E;
+    margin: 40px 0;
+  }
+  
+  #portfolio-area .filter-btn{
+    color: #21094E;
+    border: 1px solid #21094E;
+    background-color: transparent;
+    text-transform: none;
+    margin: 5px 15px;
+    min-width: 150px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    
+  }
+  
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+    color: #4CA1A3;
+    background-color: #511281;
+    border-color: #511281;
+  }
+  /* */
+
+
+#infoGerais{
+ background-color: #21094ea8;
+ border-radius: 20px;
+ padding: 40px; 
+ margin-bottom: 100px;
+
+}
+
+.p1{
+  color: #4CA1A3;
+  /* padding-top: 40px; */
+  /* padding-left: 10px; */
+  font-family: 'Audiowide', cursive;
+}
+
+
+.img1{
+  width: 400px;
+  height: 200px;
+  margin: 10px 0;
+  /* margin-left: 50px; */
+  border-radius: 10px;
+  /* padding-top: 5px;
+  padding-left: 20px; */
+  box-shadow: 10px 5px 10px black;
+
+  transform: translate(0) scale(1);
+  transition: .3s ease;
+  
+}
+
+.img1:hover{
+  transform: translate(5px) scale(1.1);
+  transition: .3s ease;
+}
+
+/* .img2{
+  width: 400px;
+  height: 250px;
+  padding-top: 10px;
+  padding-left: 20px;
+  box-shadow: 10px 5px 10px black;
+  margin-top: 3px;
+  
+}
+.img3{
+  width: 400px;
+  height: 250px;
+  padding-top: 10px;
+  padding-left: 20px;
+  box-shadow: 10px 5px 10px black;
+  padding-bottom: 3px;
+  
+} */
+
+
+/* SETA PARA CIMA */
+.arrow{
+  position: relative;
+  bottom: -395%;
+  left: 90%;
+  }
+  
+
+
+  /* FOOTER */
+#footerQuem{
+    background-color: #1E2222;
+    height: 150px;
+    color: #F6F7D4;
+  }
+  
+  /* FIM DO FOOTER */

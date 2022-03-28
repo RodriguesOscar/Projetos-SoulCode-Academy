@@ -1,0 +1,25 @@
+<!-- Carousel e painel principal da página home -->
+<app-carousel-home></app-carousel-home>
+
+<!-- Apresentação da empresa -->
+<app-quem-somos-home id="quem-somos"></app-quem-somos-home>
+
+<!-- Cursos disponíveis e armazenados no firebase cloud firestore -->
+<app-cards id="cursos-container"></app-cards>
+
+<!-- Trilha do desenvolvimento web -->
+<app-trilha-dev-home id="trilha-dev"></app-trilha-dev-home>
+
+<!-- Fale Conosco -->
+<div class="container-fluid">
+  <div class="row text-center">
+    <h1 class="mt-4">Estamos aqui para melhor lhe atender!</h1>
+    <h6>Você tem alguma dúvida ou sugestão? Fale conosco.</h6>
+    <div class="mb-4">
+      <a (click)="btnContato()" id="contato-btn" class="btn">
+        Contatos
+      </a>
+    </div>
+  </div>
+</div>
+

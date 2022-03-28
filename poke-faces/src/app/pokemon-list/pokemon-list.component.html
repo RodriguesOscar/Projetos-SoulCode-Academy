@@ -1,0 +1,15 @@
+<h3 class="text-center text-warning mb-5 pt-4">POKE FACES PROJECT</h3>
+<!-- Uma forma de renderização -->
+<!-- <app-pokemon-card *ngFor="let cadaPokemon of pokemons"></app-pokemon-card> -->
+
+<!-- Outra forma de renderização -->
+<!-- <div *ngFor="let cadaPokemon of pokemons">
+    {{pokemons}}
+</div> -->
+
+<div class="container-fluid">
+    <div class="row d-flex mx-4 text-center text-white shadow bg-dark rounded">
+        <app-pokemon-card class="col-3 text-uppercase badge text-warning mt-4" *ngFor="let cadaPokemon of pokemon; index as i" [pokemon]="cadaPokemon.name" [numero]="i + 1"></app-pokemon-card>
+    </div>
+</div>
+<div class="alert text-white text-center h5">Desenvolvido por Oscar Rodrigues</div>

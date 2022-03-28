@@ -1,0 +1,25 @@
+.card{
+  display: flex;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  margin-top: 20px;
+  border: none;
+}
+
+#btn{
+  background-color: rgb(255,188,0);
+}
+
+#imagens{
+  display: flex;
+}
+
+@media (max-width: 768px){
+
+  #imagens{
+    display: none;
+  }
+
+}
+

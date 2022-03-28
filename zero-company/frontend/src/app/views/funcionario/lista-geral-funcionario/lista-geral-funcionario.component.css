@@ -1,0 +1,19 @@
+.card{
+  background-color: rgb(0,0,0,0.3);
+  border: none;
+}
+
+.btn{
+  background-color: rgb(178,25,171);
+  color: white;
+}
+
+
+.bi{
+  cursor: pointer;
+}
+
+.btn-pag{
+  background-color: rgb(0,255,0);
+
+}

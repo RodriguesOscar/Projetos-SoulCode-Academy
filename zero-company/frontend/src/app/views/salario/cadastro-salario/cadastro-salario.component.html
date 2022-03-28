@@ -1,0 +1,28 @@
+<div class="card mt-5 text-white">
+  <div class="card-body">
+    <h5 class="card-title">Cadastro de pagamento</h5>
+    <hr>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Descritivo do pagamento</label>
+        <input type="text" class="form-control" [(ngModel)]="salario.sl_descricao" name="sl_descricao">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Data do pagamento</label>
+        <input type="date" class="form-control" [(ngModel)]="salario.sl_dataPagamento " name="sl_dataPagamento" style="width:200px;">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Valor do pagamento</label>
+        <input type="text" class="form-control text-center" [(ngModel)]="salario.sl_valor" name="sl_valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" style="width:200px;">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Status do pagamento</label>
+        <input type="text" class="form-control" value="PENDENTE" [(ngModel)]="salario.sl_status" name="sl_status">
+      </div>
+      <div class="text-center">
+        <button (click)="cadastrarSalario()" class="btn btn-success">Salvar</button>
+        <button (click)="cancelarCadastro()" class="btn btn-secondary mx-3">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

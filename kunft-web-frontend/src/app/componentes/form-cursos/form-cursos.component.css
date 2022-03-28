@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.valido{
+  border-color: green;
+}
+
+.invalido{
+  border-color: red;
+}
+
+h5, .titulo{
+  color: rgb(232, 95, 28);
+}
+
+.card{
+  background: linear-gradient(to left, #13293D, #006494);
+}

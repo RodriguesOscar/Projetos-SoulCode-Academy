@@ -1,0 +1,29 @@
+<div class="card mt-5 text-white">
+  <div class="card-body">
+    <h5 class="card-title">Cadastro de novo monstro</h5>
+    <hr>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Nome do monstro</label>
+        <input type="text" class="form-control" [(ngModel)]="funcionario.func_nome" name="func_nome">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Cargo do monstro</label>
+        <input type="text" class="form-control" [(ngModel)]="funcionario.func_cargo" name="func_cargo">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Cidade do monstro</label>
+        <input type="text" class="form-control" [(ngModel)]="funcionario.func_cidade" name="func_cidade">
+      </div>
+      <div class="text-center">
+        <button (click)="confirmarCadastroFuncionario()" class="btn btn-success">Cadastrar</button>
+        <button (click)="cancelarCadastro()" class="btn btn-secondary mx-3">Cancelar</button>
+      </div>
+      <!-- <hr>
+      <div class="mb-3">
+        <label class="form-label">Atribuir foto ao monstro</label>
+        <input type="file" class="form-control" [disabled]="!funcionarioCadastrado" (change)="subirFoto($event)" name="func_foto">
+      </div> -->
+    </form>
+  </div>
+</div>

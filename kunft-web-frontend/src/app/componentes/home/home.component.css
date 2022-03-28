@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#carousel-container{
+  background: linear-gradient(to right, #13293D, #006494);
+}
+
+/* PAINEL */
+#painel-container{
+
+  display: none;
+  background: linear-gradient(to top, #13293D, #006494);
+
+}
+
+#painel-title{
+  color: #ffffff;
+}
+
+#painel-subtitle{
+  color: #F6F7D4;
+}
+
+#painel-btn{
+
+  text-align: center;
+  background: linear-gradient(to top, #13293D, #006494);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 0px 1px #ffffff;
+}
+
+#painel-btn:hover{
+  background-color: #4CA1A3;
+}
+
+#painel-btn:active{
+  box-shadow: 0 0 0 0 #4CA1A3, inset 3px 3px 3px #4CA1A3;
+  transform: translate(3px, 3px);
+}
+
+/* PAINEL MOBILE */
+
+@media (max-width: 779px){
+  #carrossel{
+    display: none;
+  }
+}
+@media (max-width: 800px){
+
+  #painel-container{display: block;}
+
+  #painel-title{font-size: 24px;}
+
+  #painel-subtitle {font-size: 14px;}
+
+}
+
+/* CAROUSEL */
+.textoLateral{
+  height: 100%;
+}
+
+.esquerda{
+  background: linear-gradient(to top, #13293D, #006494);
+  opacity: 0.9;
+  height: 100vh;
+  width: 600px;
+  margin-left: -19.6%;
+}
+
+.textoLateral h5{
+  color: #ffffff;
+  opacity: 1;
+  font-size: 2rem;
+  padding: 10px;
+  margin-top: 130px;
+}
+
+.textoLateral p{
+  color: #F6F7D4;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.btnCarousel{
+  text-align: center;
+
+  background: linear-gradient(to top, #13293D, #006494);
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  min-width: 100px;
+  width: 300px;
+  height: 60px;
+
+  box-shadow: 2px 2px 0px 1px #ffffff;
+}
+
+.btnCarousel a{
+  font-size: 1.2rem;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btnCarousel:hover{
+  background-color: #4CA1A3;
+}
+
+.btnCarousel:active{
+  box-shadow: 0 0 0 0 #4CA1A3, inset 3px 3px 3px #4CA1A3;
+  transform: translate(3px, 3px);
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+  .carouselCont{
+    height: 100px;
+    width: 100vw;
+  }
+
+  .esquerda{
+    height: 20vw;
+    width: 100%;
+    margin-left: -15%;
+  }
+
+  .textoLateral h5{
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+
+  .textoLateral p{
+    font-size: 1.4rem;
+  }
+
+  .btnCarousel{
+    top: 70%;
+    left: 30%;
+    width: 200px;
+    height: 40px;
+  }
+
+  .btnCarousel a{
+    font-size: .8rem;
+  }
+
+  #painel-container{display: none;}
+
+}
+
+#contato-btn{
+
+  text-align: center;
+  background: linear-gradient(to top, #13293D, #006494);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 0px 1px #ffffff;
+}
+
+#contato-btn:hover{
+  background-color: #4CA1A3;
+}
+
+#contato-btn:active{
+  box-shadow: 0 0 0 0 #4CA1A3, inset 3px 3px 3px #4CA1A3;
+  transform: translate(3px, 3px);
+}

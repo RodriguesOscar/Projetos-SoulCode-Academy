@@ -1,0 +1,29 @@
+<div class="card mt-5 text-white text-center">
+  <div class="card-body">
+    <h5 class="card-title">Monstros da equipe</h5>
+    <div style="height: 300px; overflow: auto;">
+      <table class="table text-white">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome do funcionario</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Cidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let funcionario of funcionarios">
+            <th scope="row">{{funcionario.id_funcionario}}</th>
+            <td>{{funcionario.func_nome}}</td>
+            <td>{{funcionario.func_cargo}}</td>
+            <td>{{funcionario.func_cidade}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-5">
+      <button id="btn-control" routerLink="/funcionario/lista" class="btn">Controle de monstros</button>
+      <button (click)="voltar()" class="btn btn-secondary mx-3">Voltar à página anterior</button>
+    </div>
+  </div>
+</div>

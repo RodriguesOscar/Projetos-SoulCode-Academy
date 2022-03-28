@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-size: 100%;
+  color:#21094E
+}
+
+body{
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
+/* HEADER NAVBAR */
+
+/* MENU MOBILE */
+#btn-mobile {
+  display: none;
+}
+
+/* BOTÃO HAMBURGER E ESTRUTURA MOBILE DO MENU */
+@media (max-width: 800px){
+  #menu{
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 80px;
+    right: 0px;
+    background-color: #4ca1a3c9;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu-principal.active #menu {
+    height: calc(100vh - 89px);
+    overflow-y: auto;
+    visibility: visible;
+  }
+
+  #menu li a{
+    padding: 1rem;
+    margin: 0 1rem;
+    
+    border-bottom: 2px solid rgba(46, 4, 85, 0.322);
+  }
+
+  #btn-mobile{
+    display: flex;
+    padding: 1rem 1rem;
+    /* font-size: 1rem; */
+    border: none;
+    background: none;
+    gap: .5rem;
+    color: #4ca1a3c9;
+  }
+
+  #hamburger{
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #menu-principal.active #hamburger{
+    border-top-color: transparent;
+  }
+
+  #menu-principal.active #hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #menu-principal.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  /* FIM DO MENU HAMBURGER */
+}
+
+
+#menu-principal{
+  background-color: #21094E;
+  height: 80px;
+  width: 100vw;
+}
+
+#logo{
+  color: #4CA1A3;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.4rem;
+}
+
+#logo p{
+  color: #F6F7D4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: -18px;
+}
+/* 
+#navbarText li:nth-child(4){
+  position: relative;
+  right: -70%;
+} */
+
+#menu li a{
+  color: #F6F7D4;
+  font-size: 1.3rem;
+}
+
+.menuDrop{
+  background-color: #4CA1A3;
+}
+
+.btnAcessibilidade li input{
+  background: transparent;
+  border: none;
+  color: #F6F7D4;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  
+}
+
+/* FIM DO HEADER NAVBAR */
+
+
+/* FORMULARIO */
+
+h1{
+  font-size: 2.5rem;
+}
+h4{
+
+  font-size: 1.4rem;
+  
+}
+h2{
+
+  font-size: 2.0rem;
+  
+}
+legend{
+  font-size: 1.4rem;
+}
+span{
+  font-size: 1rem;
+}
+label{
+  font-size: 1rem;
+}
+.btns{
+  background-color: #4CA1A3;
+  color: #F6F7D4;
+
+}
+.copy{
+  color: #F6F7D4;
+
+}
+
+/* FOOTER */
+#footerQuem{
+  background-color: #1E2222;
+  height: 150px;
+  color: #F6F7D4;
+  
+}
+/* SETA PARA CIMA */
+.arrow{
+  position: relative;
+  bottom: -395%;
+  left: 90%;
+  }
+
+/* FIM DO FOOTER */

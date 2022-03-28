@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/hp-logob.svg" type="image/x-icon">
+    <script src="js/jquery.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html">
+                <img id="logo" src="img/hp-logo.svg" alt="Logo da HP">
+            </a>
+        </div>
+        <nav id="nav-container">
+            <ul>
+                <a href="calculadora.html">
+                    <li id="calculadora">Calculadoras</li>
+                </a>
+                <a href="contato.html">
+                    <li id="contato">Contato</li>
+                </a>
+                <a href="cursos.html">
+                    <li id="cursos">Cursos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="zoom-container">
+        <img id="zoom-in" src="img/zoom-in.svg" alt="Lupa que aumenta">
+        <img id="zoom-out" src="img/zoom-out.svg" alt="Lupa que diminui">
+    </div>
+    <section>
+        <h1>Escolha a calculadora</h1>
+        <div id="calculadora">
+            <div id="calComum" class="calc-selecionada" onclick="ativarCientifica()">Comum</div>
+            <div id="calCientifica" class="calc-desabilitada" onclick="ativarCientifica()">Científica</div>
+        </div>
+    </section>
+    <main>
+        <div id="displayCalculadora-container" class="color-off"><p id="display"></p></div>
+        <div class="calculadora-container">
+            <div class="btnGroup-container">
+                <div class="dv1">
+                    <div id="on-off" class="exoItem" onclick="ligarDesligar()">ON/OFF</div>
+                    <div id="ce" class="exoItem" onclick="back()">CE</div>
+                    <div id="c" class="exoItem" onclick="clean()">C</div>
+                    <div id="erase" class="exoItem" onclick="back()"><img src="img/xmark-icon.svg" alt=""></div>
+                </div>
+                <div class="dv1" id="somente-cientifica">
+                    <div id="x3" class="exoItem" onclick="pow3()">x³</div>
+                    <div id="x2" class="exoItem" onclick="pow2()">x²</div>
+                    <div id="vx" class="exoItem" onclick="sqrt1()">√x</div>
+                    <div id="divisao" class="exoItem" onclick="insert('/')">/</div>
+                </div>
+                <div class="dv1">    
+                    <div id="7" class="intItem" onclick="insert('7')">7</div>
+                    <div id="8" class="intItem" onclick="insert('8')">8</div>
+                    <div id="9" class="intItem" onclick="insert('9')">9</div>
+                    <div id="vezes" class="exoItem" onclick="insert('*')">*</div>
+                </div>
+                <div class="dv1">
+                    <div id="4" class="intItem" onclick="insert('4')">4</div>
+                    <div id="5" class="intItem" onclick="insert('5')">5</div>
+                    <div id="6" class="intItem" onclick="insert('6')">6</div>
+                    <div id="menos" class="exoItem" onclick="insert('-')">-</div>
+                </div>
+                <div class="dv1">
+                    <div id="1" class="intItem" onclick="insert('1')">1</div>
+                    <div id="2" class="intItem" onclick="insert('2')">2</div>
+                    <div id="3" class="intItem" onclick="insert('3')">3</div>
+                    <div id="mais" class="exoItem" onclick="insert('+')">+</div>
+                </div>
+                <div class="dv1">
+                    <div id="0" class="intItem" onclick="insert('0')">0</div>
+                    <div id="ponto" class="intItem" onclick="insert('.')">.</div>
+                    <div id="igual" class="exoItem" onclick="calcular()">=</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="social-container">
+            <a href="https://www.instagram.com/hp/?utm_medium=copy_link" target="_blank">
+                <img class="soc" src="img/insta-logo.svg" alt="Logo do Instagram">
+            </a>
+            <a href="https://twitter.com/hpbrasil" target="_blank">
+                <img class="soc" src="img/twitter-logo.svg" alt="Logo do Twitter ">
+            </a>
+            <a href="https://www.facebook.com/HP" target="_blank">
+                <img class="soc" src="img/facebook-logo.svg" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/hp/" target="_blank">
+                <img class="soc" src="img/linkedin-logo.svg" alt="Logo do LinkedIn">
+            </a>
+        </div>
+        <h4>HP Brasil Oficial All Rights Reserved®</h4>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
